@@ -3,6 +3,8 @@ name: Build & Deploy to GH Pages
 on:
   push:
     branches: [ main ]
+  schedule:
+    - cron: "0 0 * * 0" # every sunday at midnight
   workflow_dispatch:
 
 jobs:
@@ -10,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      
       - uses: actions/setup-node@v3
         with:
           node-version: '17'
