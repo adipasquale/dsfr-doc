@@ -1,12 +1,11 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
 .fr-footer__partners a {
   background: #fff;
 }
-
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /**
   * Reset liste à puce
@@ -28,10 +27,6 @@
 
   .fr-footer__content-desc [href] {
     text-decoration: underline;
-  }
-
-  .fr-footer__content-desc [target='_blank']::after {
-    content: '';
   }
 
   .fr-footer {

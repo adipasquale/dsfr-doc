@@ -1,8 +1,9 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .fr-btn::before {
+  .fr-btn::before,
+  .fr-btn::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -10,10 +11,14 @@
     height: 1rem;
   }
 
-  .fr-btn:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class^="fr-icon-"]::before,
-  .fr-btn:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class*=" fr-icon-"]::before,
-  .fr-btn:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class^="fr-fi-"]::before,
-  .fr-btn:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class*=" fr-fi-"]::before {
+  .fr-btn[class^=fr-icon-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn[class^=fr-icon-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn[class*=" fr-icon-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn[class*=" fr-icon-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn[class^=fr-fi-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn[class^=fr-fi-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn[class*=" fr-fi-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn[class*=" fr-fi-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -21,7 +26,8 @@
     height: 1.5rem;
   }
 
-  .fr-btn--sm::before {
+  .fr-btn--sm::before,
+  .fr-btn--sm::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -29,10 +35,14 @@
     height: 0.75rem;
   }
 
-  .fr-btn--sm:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class^="fr-icon-"]::before,
-  .fr-btn--sm:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class*=" fr-icon-"]::before,
-  .fr-btn--sm:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class^="fr-fi-"]::before,
-  .fr-btn--sm:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class*=" fr-fi-"]::before {
+  .fr-btn--sm[class^=fr-icon-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn--sm[class^=fr-icon-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn--sm[class*=" fr-icon-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn--sm[class*=" fr-icon-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn--sm[class^=fr-fi-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn--sm[class^=fr-fi-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn--sm[class*=" fr-fi-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn--sm[class*=" fr-fi-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -40,7 +50,8 @@
     height: 1rem;
   }
 
-  .fr-btn--lg::before {
+  .fr-btn--lg::before,
+  .fr-btn--lg::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -48,10 +59,14 @@
     height: 1.5rem;
   }
 
-  .fr-btn--lg:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class^="fr-icon-"]::before,
-  .fr-btn--lg:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class*=" fr-icon-"]::before,
-  .fr-btn--lg:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class^="fr-fi-"]::before,
-  .fr-btn--lg:not([class^="fr-btn--icon-"]):not([class*=" fr-btn--icon-"])[class*=" fr-fi-"]::before {
+  .fr-btn--lg[class^=fr-icon-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn--lg[class^=fr-icon-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn--lg[class*=" fr-icon-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn--lg[class*=" fr-icon-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn--lg[class^=fr-fi-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn--lg[class^=fr-fi-]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after,
+  .fr-btn--lg[class*=" fr-fi-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::before,
+  .fr-btn--lg[class*=" fr-fi-"]:not([class^=fr-btn--icon-]):not([class*=" fr-btn--icon-"])::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -59,11 +74,8 @@
     height: 2rem;
   }
 
-  .fr-btn--close {
-    content: '';
-  }
-
-  .fr-btn--close::before {
+  .fr-btn--close::before,
+  .fr-btn--close::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -72,11 +84,8 @@
     height: 1rem;
   }
 
-  .fr-btn--display {
-    content: '';
-  }
-
-  .fr-btn--display::before {
+  .fr-btn--display::before,
+  .fr-btn--display::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -100,10 +109,14 @@
     margin-bottom: 0;
   }
 
-  .fr-btns-group--sm:not([class^="fr-btns-group--icon-"]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^="fr-icon-"]::before,
-  .fr-btns-group--sm:not([class^="fr-btns-group--icon-"]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-icon-"]::before,
-  .fr-btns-group--sm:not([class^="fr-btns-group--icon-"]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^="fr-fi-"]::before,
-  .fr-btns-group--sm:not([class^="fr-btns-group--icon-"]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-fi-"]::before {
+  .fr-btns-group--sm:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^=fr-icon-]::before,
+  .fr-btns-group--sm:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^=fr-icon-]::after,
+  .fr-btns-group--sm:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-icon-"]::before,
+  .fr-btns-group--sm:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-icon-"]::after,
+  .fr-btns-group--sm:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^=fr-fi-]::before,
+  .fr-btns-group--sm:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^=fr-fi-]::after,
+  .fr-btns-group--sm:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-fi-"]::before,
+  .fr-btns-group--sm:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-fi-"]::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -111,10 +124,14 @@
     height: 1rem;
   }
 
-  .fr-btns-group--lg:not([class^="fr-btns-group--icon-"]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^="fr-icon-"]::before,
-  .fr-btns-group--lg:not([class^="fr-btns-group--icon-"]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-icon-"]::before,
-  .fr-btns-group--lg:not([class^="fr-btns-group--icon-"]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^="fr-fi-"]::before,
-  .fr-btns-group--lg:not([class^="fr-btns-group--icon-"]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-fi-"]::before {
+  .fr-btns-group--lg:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^=fr-icon-]::before,
+  .fr-btns-group--lg:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^=fr-icon-]::after,
+  .fr-btns-group--lg:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-icon-"]::before,
+  .fr-btns-group--lg:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-icon-"]::after,
+  .fr-btns-group--lg:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^=fr-fi-]::before,
+  .fr-btns-group--lg:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class^=fr-fi-]::after,
+  .fr-btns-group--lg:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-fi-"]::before,
+  .fr-btns-group--lg:not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn[class*=" fr-fi-"]::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;

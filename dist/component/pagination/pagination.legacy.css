@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -8,10 +8,6 @@
   */
   .fr-pagination [href] {
     text-decoration: none;
-  }
-
-  .fr-pagination [target='_blank']::after {
-    content: none;
   }
 
   .fr-pagination ul {
@@ -29,11 +25,8 @@
     margin-bottom: 0;
   }
 
-  .fr-pagination__link--first {
-    content: '';
-  }
-
-  .fr-pagination__link--first::before {
+  .fr-pagination__link--first::before,
+  .fr-pagination__link--first::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -42,11 +35,8 @@
     height: 1.5rem;
   }
 
-  .fr-pagination__link--prev {
-    content: '';
-  }
-
-  .fr-pagination__link--prev::before {
+  .fr-pagination__link--prev::before,
+  .fr-pagination__link--prev::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -55,11 +45,8 @@
     height: 1.5rem;
   }
 
-  .fr-pagination__link--next {
-    content: '';
-  }
-
-  .fr-pagination__link--next::before {
+  .fr-pagination__link--next::before,
+  .fr-pagination__link--next::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -68,11 +55,8 @@
     height: 1.5rem;
   }
 
-  .fr-pagination__link--last {
-    content: '';
-  }
-
-  .fr-pagination__link--last::before {
+  .fr-pagination__link--last::before,
+  .fr-pagination__link--last::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -103,7 +87,7 @@
     color: #929292;
   }
 }
-@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), all and (-ms-high-contrast: active) and (-ms-high-contrast: none), all and (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
   .fr-pagination__link {
     background-color: transparent;
   }

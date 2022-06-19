@@ -1,18 +1,17 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
 .fr-sidemenu {
   /*
-    @include scheme-element-bg-color(default grey);
+  @include scheme-element-bg-color(default grey);
 
-    @include respond-from(md) {
-      @include scheme-element-bg-transparent((legacy:$legacy, hover: true));
-    }
-    */
+  @include respond-from(md) {
+    @include scheme-element-bg-transparent((legacy:$legacy, hover: true));
+  }
+  */
 }
-
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /**
   * Correctif de la hauteur de la navigation latérale
@@ -40,15 +39,8 @@
     text-decoration: none;
   }
 
-  .fr-sidemenu [target='_blank']::after {
-    content: none;
-  }
-
-  .fr-sidemenu__btn[aria-expanded] {
-    content: '';
-  }
-
-  .fr-sidemenu__btn[aria-expanded]::before {
+  .fr-sidemenu__btn[aria-expanded]::before,
+  .fr-sidemenu__btn[aria-expanded]::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -84,8 +76,8 @@
     color: #000091;
   }
 
-  .fr-sidemenu__link[aria-current]::after,
-  .fr-sidemenu__btn[aria-current]::after {
+  .fr-sidemenu__link[aria-current]::before,
+  .fr-sidemenu__btn[aria-current]::before {
     background-color: #000091;
   }
 
@@ -93,14 +85,12 @@
     background-color: #fff;
   }
 }
-
 @media (min-width: 48em) {
   .fr-sidemenu__title {
     box-shadow: none;
   }
 }
-
-@media all and (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
+@media (min-width: 48em) and (-ms-high-contrast: none), (min-width: 48em) and (-ms-high-contrast: active) {
   .fr-sidemenu__inner {
     box-shadow: inset -1px 0 0 0 #e5e5e5;
   }

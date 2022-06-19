@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -35,7 +35,7 @@
   border-spacing: 0;
 }
 
-.fr-table[data-fr-js-table="true"] caption {
+.fr-table[data-fr-js-table=true] caption {
   position: absolute;
   top: 0;
 }
@@ -63,6 +63,18 @@
 
 .fr-table th {
   font-weight: 700;
+}
+
+.fr-table thead {
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-plain-grey), var(--border-plain-grey));
+  background-color: var(--background-contrast-grey);
+
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+  color: var(--text-title-grey);
 }
 
 .fr-table thead td,
@@ -106,7 +118,7 @@
   margin-bottom: calc(var(--table-offset) + 2.75rem);
 }
 
-.fr-table--caption-bottom[data-fr-js-table="true"] caption {
+.fr-table--caption-bottom[data-fr-js-table=true] caption {
   position: absolute;
   top: 100%;
   right: 0;
@@ -142,6 +154,17 @@
 .fr-table--layout-fixed table {
   display: table;
   table-layout: fixed;
+}
+
+/* Style bordered, ajoute des bordures entre chaque ligne */
+.fr-table--bordered tbody tr {
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+
+  /* Style bordered, enleve le style even/odd  */
+  /* Style bordered, enleve le style even/odd  */
 }
 
 /*
@@ -216,17 +239,8 @@
   left: 0;
 }
 
-:root[data-fr-theme="dark"] .fr-table__shadow::before {
+:root[data-fr-theme=dark] .fr-table__shadow::before {
   opacity: 1;
-}
-
-.fr-table thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-grey);
-  background-color: var(--background-contrast-grey);
-
-  --hover: var(--background-contrast-grey-hover);
-  --active: var(--background-contrast-grey-active);
-  color: var(--text-title-grey);
 }
 
 .fr-table tbody {
@@ -249,7 +263,7 @@
 }
 
 .fr-table--green-tilleul-verveine thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-tilleul-verveine);
+  background-image: linear-gradient(0deg, var(--border-plain-green-tilleul-verveine), var(--border-plain-green-tilleul-verveine));
   background-color: var(--background-contrast-green-tilleul-verveine);
 
   --hover: var(--background-contrast-green-tilleul-verveine-hover);
@@ -271,7 +285,7 @@
 }
 
 .fr-table--green-tilleul-verveine.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-tilleul-verveine);
+  background-image: linear-gradient(0deg, var(--border-default-green-tilleul-verveine), var(--border-default-green-tilleul-verveine));
 }
 
 .fr-table--green-bourgeon {
@@ -280,7 +294,7 @@
 }
 
 .fr-table--green-bourgeon thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-bourgeon);
+  background-image: linear-gradient(0deg, var(--border-plain-green-bourgeon), var(--border-plain-green-bourgeon));
   background-color: var(--background-contrast-green-bourgeon);
 
   --hover: var(--background-contrast-green-bourgeon-hover);
@@ -302,7 +316,7 @@
 }
 
 .fr-table--green-bourgeon.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-bourgeon);
+  background-image: linear-gradient(0deg, var(--border-default-green-bourgeon), var(--border-default-green-bourgeon));
 }
 
 .fr-table--green-emeraude {
@@ -311,7 +325,7 @@
 }
 
 .fr-table--green-emeraude thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-emeraude);
+  background-image: linear-gradient(0deg, var(--border-plain-green-emeraude), var(--border-plain-green-emeraude));
   background-color: var(--background-contrast-green-emeraude);
 
   --hover: var(--background-contrast-green-emeraude-hover);
@@ -333,7 +347,7 @@
 }
 
 .fr-table--green-emeraude.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-emeraude);
+  background-image: linear-gradient(0deg, var(--border-default-green-emeraude), var(--border-default-green-emeraude));
 }
 
 .fr-table--green-menthe {
@@ -342,7 +356,7 @@
 }
 
 .fr-table--green-menthe thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-menthe);
+  background-image: linear-gradient(0deg, var(--border-plain-green-menthe), var(--border-plain-green-menthe));
   background-color: var(--background-contrast-green-menthe);
 
   --hover: var(--background-contrast-green-menthe-hover);
@@ -364,7 +378,7 @@
 }
 
 .fr-table--green-menthe.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-menthe);
+  background-image: linear-gradient(0deg, var(--border-default-green-menthe), var(--border-default-green-menthe));
 }
 
 .fr-table--green-archipel {
@@ -373,7 +387,7 @@
 }
 
 .fr-table--green-archipel thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-archipel);
+  background-image: linear-gradient(0deg, var(--border-plain-green-archipel), var(--border-plain-green-archipel));
   background-color: var(--background-contrast-green-archipel);
 
   --hover: var(--background-contrast-green-archipel-hover);
@@ -395,7 +409,7 @@
 }
 
 .fr-table--green-archipel.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-archipel);
+  background-image: linear-gradient(0deg, var(--border-default-green-archipel), var(--border-default-green-archipel));
 }
 
 .fr-table--blue-ecume {
@@ -404,7 +418,7 @@
 }
 
 .fr-table--blue-ecume thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-blue-ecume);
+  background-image: linear-gradient(0deg, var(--border-plain-blue-ecume), var(--border-plain-blue-ecume));
   background-color: var(--background-contrast-blue-ecume);
 
   --hover: var(--background-contrast-blue-ecume-hover);
@@ -426,7 +440,7 @@
 }
 
 .fr-table--blue-ecume.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-blue-ecume);
+  background-image: linear-gradient(0deg, var(--border-default-blue-ecume), var(--border-default-blue-ecume));
 }
 
 .fr-table--blue-cumulus {
@@ -435,7 +449,7 @@
 }
 
 .fr-table--blue-cumulus thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-blue-cumulus);
+  background-image: linear-gradient(0deg, var(--border-plain-blue-cumulus), var(--border-plain-blue-cumulus));
   background-color: var(--background-contrast-blue-cumulus);
 
   --hover: var(--background-contrast-blue-cumulus-hover);
@@ -457,7 +471,7 @@
 }
 
 .fr-table--blue-cumulus.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-blue-cumulus);
+  background-image: linear-gradient(0deg, var(--border-default-blue-cumulus), var(--border-default-blue-cumulus));
 }
 
 .fr-table--purple-glycine {
@@ -466,7 +480,7 @@
 }
 
 .fr-table--purple-glycine thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-purple-glycine);
+  background-image: linear-gradient(0deg, var(--border-plain-purple-glycine), var(--border-plain-purple-glycine));
   background-color: var(--background-contrast-purple-glycine);
 
   --hover: var(--background-contrast-purple-glycine-hover);
@@ -488,7 +502,7 @@
 }
 
 .fr-table--purple-glycine.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-purple-glycine);
+  background-image: linear-gradient(0deg, var(--border-default-purple-glycine), var(--border-default-purple-glycine));
 }
 
 .fr-table--pink-macaron {
@@ -497,7 +511,7 @@
 }
 
 .fr-table--pink-macaron thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-pink-macaron);
+  background-image: linear-gradient(0deg, var(--border-plain-pink-macaron), var(--border-plain-pink-macaron));
   background-color: var(--background-contrast-pink-macaron);
 
   --hover: var(--background-contrast-pink-macaron-hover);
@@ -519,7 +533,7 @@
 }
 
 .fr-table--pink-macaron.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-pink-macaron);
+  background-image: linear-gradient(0deg, var(--border-default-pink-macaron), var(--border-default-pink-macaron));
 }
 
 .fr-table--pink-tuile {
@@ -528,7 +542,7 @@
 }
 
 .fr-table--pink-tuile thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-pink-tuile);
+  background-image: linear-gradient(0deg, var(--border-plain-pink-tuile), var(--border-plain-pink-tuile));
   background-color: var(--background-contrast-pink-tuile);
 
   --hover: var(--background-contrast-pink-tuile-hover);
@@ -550,7 +564,7 @@
 }
 
 .fr-table--pink-tuile.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-pink-tuile);
+  background-image: linear-gradient(0deg, var(--border-default-pink-tuile), var(--border-default-pink-tuile));
 }
 
 .fr-table--yellow-tournesol {
@@ -559,7 +573,7 @@
 }
 
 .fr-table--yellow-tournesol thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-yellow-tournesol);
+  background-image: linear-gradient(0deg, var(--border-plain-yellow-tournesol), var(--border-plain-yellow-tournesol));
   background-color: var(--background-contrast-yellow-tournesol);
 
   --hover: var(--background-contrast-yellow-tournesol-hover);
@@ -581,7 +595,7 @@
 }
 
 .fr-table--yellow-tournesol.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-yellow-tournesol);
+  background-image: linear-gradient(0deg, var(--border-default-yellow-tournesol), var(--border-default-yellow-tournesol));
 }
 
 .fr-table--yellow-moutarde {
@@ -590,7 +604,7 @@
 }
 
 .fr-table--yellow-moutarde thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-yellow-moutarde);
+  background-image: linear-gradient(0deg, var(--border-plain-yellow-moutarde), var(--border-plain-yellow-moutarde));
   background-color: var(--background-contrast-yellow-moutarde);
 
   --hover: var(--background-contrast-yellow-moutarde-hover);
@@ -612,7 +626,7 @@
 }
 
 .fr-table--yellow-moutarde.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-yellow-moutarde);
+  background-image: linear-gradient(0deg, var(--border-default-yellow-moutarde), var(--border-default-yellow-moutarde));
 }
 
 .fr-table--orange-terre-battue {
@@ -621,7 +635,7 @@
 }
 
 .fr-table--orange-terre-battue thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-orange-terre-battue);
+  background-image: linear-gradient(0deg, var(--border-plain-orange-terre-battue), var(--border-plain-orange-terre-battue));
   background-color: var(--background-contrast-orange-terre-battue);
 
   --hover: var(--background-contrast-orange-terre-battue-hover);
@@ -643,7 +657,7 @@
 }
 
 .fr-table--orange-terre-battue.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-orange-terre-battue);
+  background-image: linear-gradient(0deg, var(--border-default-orange-terre-battue), var(--border-default-orange-terre-battue));
 }
 
 .fr-table--brown-cafe-creme {
@@ -652,7 +666,7 @@
 }
 
 .fr-table--brown-cafe-creme thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-brown-cafe-creme);
+  background-image: linear-gradient(0deg, var(--border-plain-brown-cafe-creme), var(--border-plain-brown-cafe-creme));
   background-color: var(--background-contrast-brown-cafe-creme);
 
   --hover: var(--background-contrast-brown-cafe-creme-hover);
@@ -674,7 +688,7 @@
 }
 
 .fr-table--brown-cafe-creme.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-brown-cafe-creme);
+  background-image: linear-gradient(0deg, var(--border-default-brown-cafe-creme), var(--border-default-brown-cafe-creme));
 }
 
 .fr-table--brown-caramel {
@@ -683,7 +697,7 @@
 }
 
 .fr-table--brown-caramel thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-brown-caramel);
+  background-image: linear-gradient(0deg, var(--border-plain-brown-caramel), var(--border-plain-brown-caramel));
   background-color: var(--background-contrast-brown-caramel);
 
   --hover: var(--background-contrast-brown-caramel-hover);
@@ -705,7 +719,7 @@
 }
 
 .fr-table--brown-caramel.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-brown-caramel);
+  background-image: linear-gradient(0deg, var(--border-default-brown-caramel), var(--border-default-brown-caramel));
 }
 
 .fr-table--brown-opera {
@@ -714,7 +728,7 @@
 }
 
 .fr-table--brown-opera thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-brown-opera);
+  background-image: linear-gradient(0deg, var(--border-plain-brown-opera), var(--border-plain-brown-opera));
   background-color: var(--background-contrast-brown-opera);
 
   --hover: var(--background-contrast-brown-opera-hover);
@@ -736,7 +750,7 @@
 }
 
 .fr-table--brown-opera.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-brown-opera);
+  background-image: linear-gradient(0deg, var(--border-default-brown-opera), var(--border-default-brown-opera));
 }
 
 .fr-table--beige-gris-galet {
@@ -745,7 +759,7 @@
 }
 
 .fr-table--beige-gris-galet thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-beige-gris-galet);
+  background-image: linear-gradient(0deg, var(--border-plain-beige-gris-galet), var(--border-plain-beige-gris-galet));
   background-color: var(--background-contrast-beige-gris-galet);
 
   --hover: var(--background-contrast-beige-gris-galet-hover);
@@ -767,14 +781,7 @@
 }
 
 .fr-table--beige-gris-galet.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-beige-gris-galet);
-}
-
-.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-grey);
-
-  /* Style bordered, enleve le style even/odd  */
-  /* Style bordered, enleve le style even/odd  */
+  background-image: linear-gradient(0deg, var(--border-default-beige-gris-galet), var(--border-default-beige-gris-galet));
 }
 
 .fr-table--bordered tbody tr:nth-child(even) {
@@ -805,7 +812,7 @@
   /**
   * Correctif placement caption
   */
-  .fr-table[data-fr-js-table="true"] caption {
+  .fr-table[data-fr-js-table=true] caption {
     position: relative;
   }
 
@@ -814,7 +821,7 @@
   }
 
   .fr-table thead {
-    box-shadow: inset 0 -2px 0 0 #3a3a3a;
+    background-image: linear-gradient(0deg, #3a3a3a, #3a3a3a);
     background-color: #eee;
     color: #161616;
   }
@@ -828,7 +835,7 @@
   }
 
   .fr-table--green-tilleul-verveine thead {
-    box-shadow: inset 0 -2px 0 0 #66673d;
+    background-image: linear-gradient(0deg, #66673d, #66673d);
     background-color: #fceeac;
   }
 
@@ -841,11 +848,11 @@
   }
 
   .fr-table--green-tilleul-verveine.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #b7a73f;
+    background-image: linear-gradient(0deg, #b7a73f, #b7a73f);
   }
 
   .fr-table--green-bourgeon thead {
-    box-shadow: inset 0 -2px 0 0 #447049;
+    background-image: linear-gradient(0deg, #447049, #447049);
     background-color: #c9fcac;
   }
 
@@ -858,11 +865,11 @@
   }
 
   .fr-table--green-bourgeon.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #68a532;
+    background-image: linear-gradient(0deg, #68a532, #68a532);
   }
 
   .fr-table--green-emeraude thead {
-    box-shadow: inset 0 -2px 0 0 #297254;
+    background-image: linear-gradient(0deg, #297254, #297254);
     background-color: #c3fad5;
   }
 
@@ -875,11 +882,11 @@
   }
 
   .fr-table--green-emeraude.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #00a95f;
+    background-image: linear-gradient(0deg, #00a95f, #00a95f);
   }
 
   .fr-table--green-menthe thead {
-    box-shadow: inset 0 -2px 0 0 #37635f;
+    background-image: linear-gradient(0deg, #37635f, #37635f);
     background-color: #bafaee;
   }
 
@@ -892,11 +899,11 @@
   }
 
   .fr-table--green-menthe.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #009081;
+    background-image: linear-gradient(0deg, #009081, #009081);
   }
 
   .fr-table--green-archipel thead {
-    box-shadow: inset 0 -2px 0 0 #006a6f;
+    background-image: linear-gradient(0deg, #006a6f, #006a6f);
     background-color: #c7f6fc;
   }
 
@@ -909,11 +916,11 @@
   }
 
   .fr-table--green-archipel.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #009099;
+    background-image: linear-gradient(0deg, #009099, #009099);
   }
 
   .fr-table--blue-ecume thead {
-    box-shadow: inset 0 -2px 0 0 #2f4077;
+    background-image: linear-gradient(0deg, #2f4077, #2f4077);
     background-color: #e9edfe;
   }
 
@@ -926,11 +933,11 @@
   }
 
   .fr-table--blue-ecume.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #465f9d;
+    background-image: linear-gradient(0deg, #465f9d, #465f9d);
   }
 
   .fr-table--blue-cumulus thead {
-    box-shadow: inset 0 -2px 0 0 #3558a2;
+    background-image: linear-gradient(0deg, #3558a2, #3558a2);
     background-color: #e6eefe;
   }
 
@@ -943,11 +950,11 @@
   }
 
   .fr-table--blue-cumulus.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #417dc4;
+    background-image: linear-gradient(0deg, #417dc4, #417dc4);
   }
 
   .fr-table--purple-glycine thead {
-    box-shadow: inset 0 -2px 0 0 #6e445a;
+    background-image: linear-gradient(0deg, #6e445a, #6e445a);
     background-color: #fee7fc;
   }
 
@@ -960,11 +967,11 @@
   }
 
   .fr-table--purple-glycine.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #a558a0;
+    background-image: linear-gradient(0deg, #a558a0, #a558a0);
   }
 
   .fr-table--pink-macaron thead {
-    box-shadow: inset 0 -2px 0 0 #8d533e;
+    background-image: linear-gradient(0deg, #8d533e, #8d533e);
     background-color: #fee9e6;
   }
 
@@ -977,11 +984,11 @@
   }
 
   .fr-table--pink-macaron.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #e18b76;
+    background-image: linear-gradient(0deg, #e18b76, #e18b76);
   }
 
   .fr-table--pink-tuile thead {
-    box-shadow: inset 0 -2px 0 0 #a94645;
+    background-image: linear-gradient(0deg, #a94645, #a94645);
     background-color: #fee9e7;
   }
 
@@ -994,11 +1001,11 @@
   }
 
   .fr-table--pink-tuile.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #ce614a;
+    background-image: linear-gradient(0deg, #ce614a, #ce614a);
   }
 
   .fr-table--yellow-tournesol thead {
-    box-shadow: inset 0 -2px 0 0 #716043;
+    background-image: linear-gradient(0deg, #716043, #716043);
     background-color: #feecc2;
   }
 
@@ -1011,11 +1018,11 @@
   }
 
   .fr-table--yellow-tournesol.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #c8aa39;
+    background-image: linear-gradient(0deg, #c8aa39, #c8aa39);
   }
 
   .fr-table--yellow-moutarde thead {
-    box-shadow: inset 0 -2px 0 0 #695240;
+    background-image: linear-gradient(0deg, #695240, #695240);
     background-color: #feebd0;
   }
 
@@ -1028,11 +1035,11 @@
   }
 
   .fr-table--yellow-moutarde.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #c3992a;
+    background-image: linear-gradient(0deg, #c3992a, #c3992a);
   }
 
   .fr-table--orange-terre-battue thead {
-    box-shadow: inset 0 -2px 0 0 #755348;
+    background-image: linear-gradient(0deg, #755348, #755348);
     background-color: #fee9e5;
   }
 
@@ -1045,11 +1052,11 @@
   }
 
   .fr-table--orange-terre-battue.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #e4794a;
+    background-image: linear-gradient(0deg, #e4794a, #e4794a);
   }
 
   .fr-table--brown-cafe-creme thead {
-    box-shadow: inset 0 -2px 0 0 #685c48;
+    background-image: linear-gradient(0deg, #685c48, #685c48);
     background-color: #f7ecdb;
   }
 
@@ -1062,11 +1069,11 @@
   }
 
   .fr-table--brown-cafe-creme.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #d1b781;
+    background-image: linear-gradient(0deg, #d1b781, #d1b781);
   }
 
   .fr-table--brown-caramel thead {
-    box-shadow: inset 0 -2px 0 0 #845d48;
+    background-image: linear-gradient(0deg, #845d48, #845d48);
     background-color: #f7ebe5;
   }
 
@@ -1079,11 +1086,11 @@
   }
 
   .fr-table--brown-caramel.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #c08c65;
+    background-image: linear-gradient(0deg, #c08c65, #c08c65);
   }
 
   .fr-table--brown-opera thead {
-    box-shadow: inset 0 -2px 0 0 #745b47;
+    background-image: linear-gradient(0deg, #745b47, #745b47);
     background-color: #f7ece4;
   }
 
@@ -1096,11 +1103,11 @@
   }
 
   .fr-table--brown-opera.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #bd987a;
+    background-image: linear-gradient(0deg, #bd987a, #bd987a);
   }
 
   .fr-table--beige-gris-galet thead {
-    box-shadow: inset 0 -2px 0 0 #6a6156;
+    background-image: linear-gradient(0deg, #6a6156, #6a6156);
     background-color: #f3ede5;
   }
 
@@ -1113,11 +1120,11 @@
   }
 
   .fr-table--beige-gris-galet.fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #aea397;
+    background-image: linear-gradient(0deg, #aea397, #aea397);
   }
 
   .fr-table--bordered tbody tr {
-    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+    background-image: linear-gradient(0deg, #e5e5e5, #e5e5e5);
   }
 
   .fr-table--bordered tbody tr:nth-child(even) {

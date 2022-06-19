@@ -1,4 +1,4 @@
-/*! DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
+/*! DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
 
 class State {
   constructor () {
@@ -59,7 +59,7 @@ const config = {
   prefix: 'fr',
   namespace: 'dsfr',
   organisation: '@gouvfr',
-  version: '1.5.1'
+  version: '1.6.0'
 };
 
 class LogLevel {
@@ -496,6 +496,7 @@ class Element$1 {
   }
 
   get html () {
+    if (!this.node || !this.node.outerHTML) return '';
     const end = this.node.outerHTML.indexOf('>');
     return this.node.outerHTML.substring(0, end + 1);
   }
@@ -1025,9 +1026,16 @@ const supportLocalStorage = () => {
   }
 };
 
+const supportAspectRatio = () => {
+  if (!window.CSS) return false;
+  return CSS.supports('aspect-ratio: 16 / 9');
+};
+
 const support = {};
 
 support.supportLocalStorage = supportLocalStorage;
+
+support.supportAspectRatio = supportAspectRatio;
 
 const TransitionSelector = {
   NONE: ns.selector('transition-none')
@@ -1100,9 +1108,13 @@ internals.motion = selector;
 internals.property = property;
 internals.ns = ns;
 internals.register = engine.register;
+internals.state = state;
 
 Object.defineProperty(internals, 'preventManipulation', {
   get: () => options.preventManipulation
+});
+Object.defineProperty(internals, 'stage', {
+  get: () => state.getModule('stage')
 });
 
 inspector.info(`version ${config.version}`);
@@ -1465,6 +1477,10 @@ class Instance {
 
   hasClass (className) {
     return hasClass(this.node, className);
+  }
+
+  get classNames () {
+    return getClassNames(this.node);
   }
 
   setAttribute (attributeName, value) {
@@ -2151,6 +2167,17 @@ class InjectSvg extends Instance {
       this.svg.setAttribute('id', this.imgID);
     }
 
+    // gestion de la dépréciation
+    let name = this.imgURL.match(/[ \w-]+\./)[0];
+    if (name) {
+      name = name.slice(0, -1);
+
+      if (['dark', 'light', 'system'].includes(name)) {
+        this.svg.innerHTML = this.svg.innerHTML.replaceAll('id="artwork-', `id="${name}-artwork-`);
+        this.svg.innerHTML = this.svg.innerHTML.replaceAll('"#artwork-', `"#${name}-artwork-`);
+      }
+    }
+
     if (this.imgClass && typeof this.imgClass !== 'undefined') {
       this.svg.setAttribute('class', this.imgClass);
     }
@@ -2180,6 +2207,106 @@ const InjectSvgSelector = {
   INJECT_SVG: `[${ns.attr('inject-svg')}]`
 };
 
+class Artwork extends Instance {
+  static get instanceClassName () {
+    return 'Artwork';
+  }
+
+  init () {
+    if (this.isLegacy) {
+      this.replace();
+    }
+  }
+
+  get proxy () {
+    const scope = this;
+    return Object.assign(super.proxy, {
+      replace: scope.replace.bind(scope)
+    });
+  }
+
+  fetch () {
+    this.xlink = this.node.getAttribute('xlink:href');
+    const splitUrl = this.xlink.split('#');
+    this.svgUrl = splitUrl[0];
+    this.svgName = splitUrl[1];
+
+    const xhr = new XMLHttpRequest();
+    xhr.onload = () => {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xhr.responseText, 'text/html');
+      this.realSvgContent = xmlDoc.getElementById(this.svgName);
+
+      if (this.realSvgContent) {
+        this.realSvgContent.classList.add(this.node.classList);
+        this.replace();
+      }
+    };
+    xhr.open('GET', this.svgUrl);
+    xhr.send();
+  }
+
+  replace () {
+    if (!this.realSvgContent) {
+      this.fetch();
+      return;
+    }
+
+    this.node.parentNode.replaceChild(this.realSvgContent, this.node);
+  }
+}
+
+const ArtworkSelector = {
+  ARTWORK_USE: `${ns.selector('artwork')} use`
+};
+
+const ratiosImg = ['32x9', '16x9', '3x2', '4x3', '1x1', '3x4', '2x3'];
+const ratiosVid = ['16x9', '4x3', '1x1'];
+
+const ratioSelector = (name, modifiers) => {
+  return modifiers.map(modifier => ns.selector(`${name}--${modifier}`)).join(',');
+};
+
+const deprecatedRatioSelector = `${ns.selector('responsive-img')}, ${ratioSelector('responsive-img', ratiosImg)}, ${ns.selector('responsive-vid')}, ${ratioSelector('responsive-vid', ratiosVid)}`;
+
+const RatioSelector = {
+  RATIO: `${ns.selector('ratio')}, ${ratioSelector('ratio', ratiosImg)}, ${deprecatedRatioSelector}`
+};
+
+const api = window[config.namespace];
+
+class Ratio extends Instance {
+  static get instanceClassName () {
+    return 'Ratio';
+  }
+
+  init () {
+    if (!api.internals.support.supportAspectRatio()) {
+      this.ratio = 16 / 9;
+      for (const className in this.classNames) {
+        if (this.registration.selector.indexOf(this.classNames[className]) > 0) {
+          const ratio = this.classNames[className].split('ratio-');
+          if (ratio[1]) {
+            this.ratio = ratio[1].split('x')[0] / ratio[1].split('x')[1];
+          }
+        }
+      }
+      this.isRendering = true;
+      this.update();
+    }
+  }
+
+  render () {
+    const width = this.getRect().width;
+    if (width !== this.currentWidth) this.update();
+  }
+
+  update () {
+    this.currentWidth = this.getRect().width;
+    this.style.height = this.currentWidth / this.ratio + 'px';
+  }
+}
+
 api$1.core = {
   Instance: Instance,
   Breakpoints: Breakpoints,
@@ -2200,13 +2327,16 @@ api$1.core = {
   Toggle: Toggle,
   EquisizedsGroup: EquisizedsGroup,
   InjectSvg: InjectSvg,
-  InjectSvgSelector: InjectSvgSelector
+  InjectSvgSelector: InjectSvgSelector,
+  Artwork: Artwork,
+  ArtworkSelector: ArtworkSelector,
+  Ratio: Ratio,
+  RatioSelector: RatioSelector
 };
 
 api$1.internals.register(api$1.core.CollapseSelector.COLLAPSE, api$1.core.Collapse);
 api$1.internals.register(api$1.core.InjectSvgSelector.INJECT_SVG, api$1.core.InjectSvg);
-
-const api = window[config.namespace];
+api$1.internals.register(api$1.core.RatioSelector.RATIO, api$1.core.Ratio);
 
 const SchemeValue = {
   SYSTEM: 'system',
@@ -3041,13 +3171,19 @@ class Navigation extends api.core.CollapsesGroup {
 
   down (e) {
     if (!this.isBreakpoint(api.core.Breakpoints.LG) || this.index === -1 || !this.current) return;
-    this.position = this.current.element.node.contains(e.target) ? NavigationMousePosition.INSIDE : NavigationMousePosition.OUTSIDE;
-    this.request(this.getPosition.bind(this));
+    this.position = this.current.node.contains(e.target) ? NavigationMousePosition.INSIDE : NavigationMousePosition.OUTSIDE;
+    this.requestPosition();
   }
 
   focusOut (e) {
     if (!this.isBreakpoint(api.core.Breakpoints.LG)) return;
     this.out = true;
+    this.requestPosition();
+  }
+
+  requestPosition () {
+    if (this.isRequesting) return;
+    this.isRequesting = true;
     this.request(this.getPosition.bind(this));
   }
 
@@ -3059,15 +3195,21 @@ class Navigation extends api.core.CollapsesGroup {
           break;
 
         case NavigationMousePosition.INSIDE:
-          if (this.current) this.current.focus();
+          if (this.current && !this.current.node.contains(document.activeElement)) this.current.focus();
           break;
 
         default:
           if (this.index > -1 && !this.current.hasFocus) this.index = -1;
       }
     }
+
+    this.request(this.requested.bind(this));
+  }
+
+  requested () {
     this.position = NavigationMousePosition.NONE;
     this.out = false;
+    this.isRequesting = false;
   }
 
   get index () { return super.index; }
@@ -3405,6 +3547,7 @@ class TabsList extends api.core.Instance {
 
   resize () {
     this.isScrolling = this.node.scrollWidth > this.node.clientWidth + SCROLL_OFFSET$1;
+    this.setProperty('--tab-list-height', `${this.getRect().height}px`);
   }
 
   dispose () {

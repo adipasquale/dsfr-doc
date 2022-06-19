@@ -2,7 +2,7 @@ const config = {
   prefix: 'fr',
   namespace: 'dsfr',
   organisation: '@gouvfr',
-  version: '1.5.1'
+  version: '1.6.0'
 };
 
 export default config;

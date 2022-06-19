@@ -1,27 +1,26 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
 .fr-select {
   /**
-    * Modificateur pour gérer l'état d'erreur
-    */
+  * Modificateur pour gérer l'état d'erreur
+  */
 
   /**
-    * Modificateur pour gérer l'état de validation
-    */
+  * Modificateur pour gérer l'état de validation
+  */
 
   /**
-    * Mixin pour gérer l'état disabled
-    */
+  * Mixin pour gérer l'état disabled
+  */
 
   /**
-    * On applique un style lorsque la valeur est automatiquement remplie par le navigateur
-    * sur les navigateurs webkit.
-    */
+  * On applique un style lorsque la valeur est automatiquement remplie par le navigateur
+  * sur les navigateurs webkit.
+  */
 }
-
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /**
   * Cache l'icone native du select sur IE

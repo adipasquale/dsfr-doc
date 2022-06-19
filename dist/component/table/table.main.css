@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -34,7 +34,7 @@
   border-spacing: 0;
 }
 
-.fr-table[data-fr-js-table="true"] caption {
+.fr-table[data-fr-js-table=true] caption {
   position: absolute;
   top: 0;
 }
@@ -62,6 +62,18 @@
 
 .fr-table th {
   font-weight: 700;
+}
+
+.fr-table thead {
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-plain-grey), var(--border-plain-grey));
+  background-color: var(--background-contrast-grey);
+
+  --hover: var(--background-contrast-grey-hover);
+  --active: var(--background-contrast-grey-active);
+  color: var(--text-title-grey);
 }
 
 .fr-table thead td,
@@ -105,7 +117,7 @@
   margin-bottom: calc(var(--table-offset) + 2.75rem);
 }
 
-.fr-table--caption-bottom[data-fr-js-table="true"] caption {
+.fr-table--caption-bottom[data-fr-js-table=true] caption {
   position: absolute;
   top: 100%;
   right: 0;
@@ -141,6 +153,16 @@
 .fr-table--layout-fixed table {
   display: table;
   table-layout: fixed;
+}
+
+/* Style bordered, ajoute des bordures entre chaque ligne */
+.fr-table--bordered tbody tr {
+  background-size: 100% 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, var(--border-default-grey), var(--border-default-grey));
+
+  /* Style bordered, enleve le style even/odd  */
 }
 
 /*
@@ -215,17 +237,8 @@
   left: 0;
 }
 
-:root[data-fr-theme="dark"] .fr-table__shadow::before {
+:root[data-fr-theme=dark] .fr-table__shadow::before {
   opacity: 1;
-}
-
-.fr-table thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-grey);
-  background-color: var(--background-contrast-grey);
-
-  --hover: var(--background-contrast-grey-hover);
-  --active: var(--background-contrast-grey-active);
-  color: var(--text-title-grey);
 }
 
 .fr-table tbody {
@@ -247,7 +260,7 @@
 }
 
 .fr-table--green-tilleul-verveine thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-tilleul-verveine);
+  background-image: linear-gradient(0deg, var(--border-plain-green-tilleul-verveine), var(--border-plain-green-tilleul-verveine));
   background-color: var(--background-contrast-green-tilleul-verveine);
 
   --hover: var(--background-contrast-green-tilleul-verveine-hover);
@@ -269,7 +282,7 @@
 }
 
 .fr-table--green-tilleul-verveine.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-tilleul-verveine);
+  background-image: linear-gradient(0deg, var(--border-default-green-tilleul-verveine), var(--border-default-green-tilleul-verveine));
 }
 
 .fr-table--green-bourgeon {
@@ -277,7 +290,7 @@
 }
 
 .fr-table--green-bourgeon thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-bourgeon);
+  background-image: linear-gradient(0deg, var(--border-plain-green-bourgeon), var(--border-plain-green-bourgeon));
   background-color: var(--background-contrast-green-bourgeon);
 
   --hover: var(--background-contrast-green-bourgeon-hover);
@@ -299,7 +312,7 @@
 }
 
 .fr-table--green-bourgeon.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-bourgeon);
+  background-image: linear-gradient(0deg, var(--border-default-green-bourgeon), var(--border-default-green-bourgeon));
 }
 
 .fr-table--green-emeraude {
@@ -307,7 +320,7 @@
 }
 
 .fr-table--green-emeraude thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-emeraude);
+  background-image: linear-gradient(0deg, var(--border-plain-green-emeraude), var(--border-plain-green-emeraude));
   background-color: var(--background-contrast-green-emeraude);
 
   --hover: var(--background-contrast-green-emeraude-hover);
@@ -329,7 +342,7 @@
 }
 
 .fr-table--green-emeraude.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-emeraude);
+  background-image: linear-gradient(0deg, var(--border-default-green-emeraude), var(--border-default-green-emeraude));
 }
 
 .fr-table--green-menthe {
@@ -337,7 +350,7 @@
 }
 
 .fr-table--green-menthe thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-menthe);
+  background-image: linear-gradient(0deg, var(--border-plain-green-menthe), var(--border-plain-green-menthe));
   background-color: var(--background-contrast-green-menthe);
 
   --hover: var(--background-contrast-green-menthe-hover);
@@ -359,7 +372,7 @@
 }
 
 .fr-table--green-menthe.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-menthe);
+  background-image: linear-gradient(0deg, var(--border-default-green-menthe), var(--border-default-green-menthe));
 }
 
 .fr-table--green-archipel {
@@ -367,7 +380,7 @@
 }
 
 .fr-table--green-archipel thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-green-archipel);
+  background-image: linear-gradient(0deg, var(--border-plain-green-archipel), var(--border-plain-green-archipel));
   background-color: var(--background-contrast-green-archipel);
 
   --hover: var(--background-contrast-green-archipel-hover);
@@ -389,7 +402,7 @@
 }
 
 .fr-table--green-archipel.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-green-archipel);
+  background-image: linear-gradient(0deg, var(--border-default-green-archipel), var(--border-default-green-archipel));
 }
 
 .fr-table--blue-ecume {
@@ -397,7 +410,7 @@
 }
 
 .fr-table--blue-ecume thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-blue-ecume);
+  background-image: linear-gradient(0deg, var(--border-plain-blue-ecume), var(--border-plain-blue-ecume));
   background-color: var(--background-contrast-blue-ecume);
 
   --hover: var(--background-contrast-blue-ecume-hover);
@@ -419,7 +432,7 @@
 }
 
 .fr-table--blue-ecume.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-blue-ecume);
+  background-image: linear-gradient(0deg, var(--border-default-blue-ecume), var(--border-default-blue-ecume));
 }
 
 .fr-table--blue-cumulus {
@@ -427,7 +440,7 @@
 }
 
 .fr-table--blue-cumulus thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-blue-cumulus);
+  background-image: linear-gradient(0deg, var(--border-plain-blue-cumulus), var(--border-plain-blue-cumulus));
   background-color: var(--background-contrast-blue-cumulus);
 
   --hover: var(--background-contrast-blue-cumulus-hover);
@@ -449,7 +462,7 @@
 }
 
 .fr-table--blue-cumulus.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-blue-cumulus);
+  background-image: linear-gradient(0deg, var(--border-default-blue-cumulus), var(--border-default-blue-cumulus));
 }
 
 .fr-table--purple-glycine {
@@ -457,7 +470,7 @@
 }
 
 .fr-table--purple-glycine thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-purple-glycine);
+  background-image: linear-gradient(0deg, var(--border-plain-purple-glycine), var(--border-plain-purple-glycine));
   background-color: var(--background-contrast-purple-glycine);
 
   --hover: var(--background-contrast-purple-glycine-hover);
@@ -479,7 +492,7 @@
 }
 
 .fr-table--purple-glycine.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-purple-glycine);
+  background-image: linear-gradient(0deg, var(--border-default-purple-glycine), var(--border-default-purple-glycine));
 }
 
 .fr-table--pink-macaron {
@@ -487,7 +500,7 @@
 }
 
 .fr-table--pink-macaron thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-pink-macaron);
+  background-image: linear-gradient(0deg, var(--border-plain-pink-macaron), var(--border-plain-pink-macaron));
   background-color: var(--background-contrast-pink-macaron);
 
   --hover: var(--background-contrast-pink-macaron-hover);
@@ -509,7 +522,7 @@
 }
 
 .fr-table--pink-macaron.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-pink-macaron);
+  background-image: linear-gradient(0deg, var(--border-default-pink-macaron), var(--border-default-pink-macaron));
 }
 
 .fr-table--pink-tuile {
@@ -517,7 +530,7 @@
 }
 
 .fr-table--pink-tuile thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-pink-tuile);
+  background-image: linear-gradient(0deg, var(--border-plain-pink-tuile), var(--border-plain-pink-tuile));
   background-color: var(--background-contrast-pink-tuile);
 
   --hover: var(--background-contrast-pink-tuile-hover);
@@ -539,7 +552,7 @@
 }
 
 .fr-table--pink-tuile.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-pink-tuile);
+  background-image: linear-gradient(0deg, var(--border-default-pink-tuile), var(--border-default-pink-tuile));
 }
 
 .fr-table--yellow-tournesol {
@@ -547,7 +560,7 @@
 }
 
 .fr-table--yellow-tournesol thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-yellow-tournesol);
+  background-image: linear-gradient(0deg, var(--border-plain-yellow-tournesol), var(--border-plain-yellow-tournesol));
   background-color: var(--background-contrast-yellow-tournesol);
 
   --hover: var(--background-contrast-yellow-tournesol-hover);
@@ -569,7 +582,7 @@
 }
 
 .fr-table--yellow-tournesol.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-yellow-tournesol);
+  background-image: linear-gradient(0deg, var(--border-default-yellow-tournesol), var(--border-default-yellow-tournesol));
 }
 
 .fr-table--yellow-moutarde {
@@ -577,7 +590,7 @@
 }
 
 .fr-table--yellow-moutarde thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-yellow-moutarde);
+  background-image: linear-gradient(0deg, var(--border-plain-yellow-moutarde), var(--border-plain-yellow-moutarde));
   background-color: var(--background-contrast-yellow-moutarde);
 
   --hover: var(--background-contrast-yellow-moutarde-hover);
@@ -599,7 +612,7 @@
 }
 
 .fr-table--yellow-moutarde.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-yellow-moutarde);
+  background-image: linear-gradient(0deg, var(--border-default-yellow-moutarde), var(--border-default-yellow-moutarde));
 }
 
 .fr-table--orange-terre-battue {
@@ -607,7 +620,7 @@
 }
 
 .fr-table--orange-terre-battue thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-orange-terre-battue);
+  background-image: linear-gradient(0deg, var(--border-plain-orange-terre-battue), var(--border-plain-orange-terre-battue));
   background-color: var(--background-contrast-orange-terre-battue);
 
   --hover: var(--background-contrast-orange-terre-battue-hover);
@@ -629,7 +642,7 @@
 }
 
 .fr-table--orange-terre-battue.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-orange-terre-battue);
+  background-image: linear-gradient(0deg, var(--border-default-orange-terre-battue), var(--border-default-orange-terre-battue));
 }
 
 .fr-table--brown-cafe-creme {
@@ -637,7 +650,7 @@
 }
 
 .fr-table--brown-cafe-creme thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-brown-cafe-creme);
+  background-image: linear-gradient(0deg, var(--border-plain-brown-cafe-creme), var(--border-plain-brown-cafe-creme));
   background-color: var(--background-contrast-brown-cafe-creme);
 
   --hover: var(--background-contrast-brown-cafe-creme-hover);
@@ -659,7 +672,7 @@
 }
 
 .fr-table--brown-cafe-creme.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-brown-cafe-creme);
+  background-image: linear-gradient(0deg, var(--border-default-brown-cafe-creme), var(--border-default-brown-cafe-creme));
 }
 
 .fr-table--brown-caramel {
@@ -667,7 +680,7 @@
 }
 
 .fr-table--brown-caramel thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-brown-caramel);
+  background-image: linear-gradient(0deg, var(--border-plain-brown-caramel), var(--border-plain-brown-caramel));
   background-color: var(--background-contrast-brown-caramel);
 
   --hover: var(--background-contrast-brown-caramel-hover);
@@ -689,7 +702,7 @@
 }
 
 .fr-table--brown-caramel.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-brown-caramel);
+  background-image: linear-gradient(0deg, var(--border-default-brown-caramel), var(--border-default-brown-caramel));
 }
 
 .fr-table--brown-opera {
@@ -697,7 +710,7 @@
 }
 
 .fr-table--brown-opera thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-brown-opera);
+  background-image: linear-gradient(0deg, var(--border-plain-brown-opera), var(--border-plain-brown-opera));
   background-color: var(--background-contrast-brown-opera);
 
   --hover: var(--background-contrast-brown-opera-hover);
@@ -719,7 +732,7 @@
 }
 
 .fr-table--brown-opera.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-brown-opera);
+  background-image: linear-gradient(0deg, var(--border-default-brown-opera), var(--border-default-brown-opera));
 }
 
 .fr-table--beige-gris-galet {
@@ -727,7 +740,7 @@
 }
 
 .fr-table--beige-gris-galet thead {
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-beige-gris-galet);
+  background-image: linear-gradient(0deg, var(--border-plain-beige-gris-galet), var(--border-plain-beige-gris-galet));
   background-color: var(--background-contrast-beige-gris-galet);
 
   --hover: var(--background-contrast-beige-gris-galet-hover);
@@ -749,13 +762,7 @@
 }
 
 .fr-table--beige-gris-galet.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-beige-gris-galet);
-}
-
-.fr-table--bordered tbody tr {
-  box-shadow: inset 0 -1px 0 0 var(--border-default-grey);
-
-  /* Style bordered, enleve le style even/odd  */
+  background-image: linear-gradient(0deg, var(--border-default-beige-gris-galet), var(--border-default-beige-gris-galet));
 }
 
 .fr-table--bordered tbody tr:nth-child(even) {
@@ -764,7 +771,6 @@
   --hover: inherit;
   --active: inherit;
 }
-
 @media (min-width: 48em) {
   .fr-table caption {
     font-size: 1.5rem;

@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -36,12 +36,8 @@
     margin-bottom: 0.5rem;
   }
 
-  .fr-accordion__btn {
-    content: '';
-    color: #161616;
-  }
-
-  .fr-accordion__btn::before {
+  .fr-accordion__btn::before,
+  .fr-accordion__btn::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -50,11 +46,16 @@
     height: 1rem;
   }
 
-  .fr-accordion__btn[aria-expanded="true"]::before {
+  .fr-accordion__btn[aria-expanded=true]::before,
+  .fr-accordion__btn[aria-expanded=true]::after {
     background-image: url("../../icons/system/subtract-line.svg");
   }
 
   .fr-accordion::before {
     box-shadow: inset 0 1px 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5;
+  }
+
+  .fr-accordion__btn {
+    color: #161616;
   }
 }

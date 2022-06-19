@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -8,10 +8,6 @@
   */
   .fr-nav [href] {
     text-decoration: none;
-  }
-
-  .fr-nav [target='_blank']::after {
-    content: none;
   }
 
   .fr-nav ul {
@@ -29,10 +25,9 @@
     margin-bottom: 0;
   }
 
-  .fr-nav__btn {
-    content: '';
-  }
-
+  /**
+  * reset margin
+  */
   .fr-nav__btn::after {
     background-color: transparent;
     background-size: 100%;
@@ -42,9 +37,6 @@
     height: 1rem;
   }
 
-  /**
-  * reset margin
-  */
   .fr-mega-menu__category {
     margin: 0;
   }
@@ -84,7 +76,7 @@
     box-shadow: 0 1px 0 0 #e5e5e5;
   }
 }
-@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), all and (-ms-high-contrast: active) and (-ms-high-contrast: none), all and (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
   .fr-nav__link,
   .fr-nav__btn {
     background-color: transparent;
@@ -100,10 +92,10 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
-@media all and (min-width: 62em) and (-ms-high-contrast: none), (min-width: 62em) and (-ms-high-contrast: active) {
+@media (min-width: 62em) and (-ms-high-contrast: none), (min-width: 62em) and (-ms-high-contrast: active) {
   /**
-    * Correctif de l'alignement des menus sur la droite
-    */
+  * Correctif de l'alignement des menus sur la droite
+  */
   .fr-nav__item {
     position: static;
   }
@@ -112,7 +104,7 @@
     transform: translateX(-100%);
   }
 
-  .fr-nav__btn[aria-expanded="true"] {
+  .fr-nav__btn[aria-expanded=true] {
     color: #000091;
     background-color: #e3e3fd;
   }

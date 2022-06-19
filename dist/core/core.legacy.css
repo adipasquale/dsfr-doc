@@ -1,7 +1,7 @@
 /*!
- * DSFR v1.5.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
-@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), all and (-ms-high-contrast: active) and (-ms-high-contrast: none), all and (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none) and (-ms-high-contrast: none), (-ms-high-contrast: none) and (-ms-high-contrast: active), (-ms-high-contrast: active) and (-ms-high-contrast: none), (-ms-high-contrast: active) and (-ms-high-contrast: active) {
   .fr-enlarge-link {
     background-color: transparent;
   }
@@ -19,10 +19,6 @@
     text-decoration: none;
   }
 
-  .fr-enlarge-link [target='_blank']::after {
-    content: none;
-  }
-
   [href],
   .fr-reset-link {
     text-decoration: underline;
@@ -36,11 +32,7 @@
     content: none;
   }
 
-  [target="_blank"] {
-    content: '';
-  }
-
-  [target="_blank"]::after {
+  [target=_blank]::after {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -53,24 +45,6 @@
     content: "";
     display: block;
     padding-bottom: 56.25%;
-  }
-
-  .fr-responsive-vid--16x9::before {
-    content: "";
-    display: block;
-    padding-bottom: 56.25% !important;
-  }
-
-  .fr-responsive-vid--4x3::before {
-    content: "";
-    display: block;
-    padding-bottom: 75% !important;
-  }
-
-  .fr-responsive-vid--1x1::before {
-    content: "";
-    display: block;
-    padding-bottom: 100% !important;
   }
 
   ul {
@@ -88,9 +62,9 @@
     margin-bottom: 0.5rem;
   }
 
-  [class^="fr-icon-"]::before,
+  [class^=fr-icon-]::before,
   [class*=" fr-icon-"]::before,
-  [class^="fr-fi-"]::before,
+  [class^=fr-fi-]::before,
   [class*=" fr-fi-"]::before {
     background-color: transparent;
     background-size: 100%;
@@ -127,14 +101,94 @@
   a:not([href]),
   button:disabled,
   input:disabled,
-  input[type="checkbox"]:disabled,
-  input[type="checkbox"]:disabled + label,
-  input[type="radio"]:disabled,
-  input[type="radio"]:disabled + label,
+  input[type=checkbox]:disabled,
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled,
+  input[type=radio]:disabled + label,
   textarea:disabled,
   video:not([href]),
   audio:not([href]) {
     color: #929292;
+  }
+
+  .fr-artwork-decorative {
+    fill: #ececfe;
+  }
+
+  .fr-artwork-minor {
+    fill: #e1000f;
+  }
+
+  .fr-artwork-major {
+    fill: #000091;
+  }
+
+  .fr-artwork--green-tilleul-verveine .fr-artwork-minor {
+    fill: #b7a73f;
+  }
+
+  .fr-artwork--green-bourgeon .fr-artwork-minor {
+    fill: #68a532;
+  }
+
+  .fr-artwork--green-emeraude .fr-artwork-minor {
+    fill: #00a95f;
+  }
+
+  .fr-artwork--green-menthe .fr-artwork-minor {
+    fill: #009081;
+  }
+
+  .fr-artwork--green-archipel .fr-artwork-minor {
+    fill: #009099;
+  }
+
+  .fr-artwork--blue-ecume .fr-artwork-minor {
+    fill: #465f9d;
+  }
+
+  .fr-artwork--blue-cumulus .fr-artwork-minor {
+    fill: #417dc4;
+  }
+
+  .fr-artwork--purple-glycine .fr-artwork-minor {
+    fill: #a558a0;
+  }
+
+  .fr-artwork--pink-macaron .fr-artwork-minor {
+    fill: #e18b76;
+  }
+
+  .fr-artwork--pink-tuile .fr-artwork-minor {
+    fill: #ce614a;
+  }
+
+  .fr-artwork--yellow-tournesol .fr-artwork-minor {
+    fill: #c8aa39;
+  }
+
+  .fr-artwork--yellow-moutarde .fr-artwork-minor {
+    fill: #c3992a;
+  }
+
+  .fr-artwork--orange-terre-battue .fr-artwork-minor {
+    fill: #e4794a;
+  }
+
+  .fr-artwork--brown-cafe-creme .fr-artwork-minor {
+    fill: #d1b781;
+  }
+
+  .fr-artwork--brown-caramel .fr-artwork-minor {
+    fill: #c08c65;
+  }
+
+  .fr-artwork--brown-opera .fr-artwork-minor {
+    fill: #bd987a;
+  }
+
+  .fr-artwork--beige-gris-galet .fr-artwork-minor {
+    fill: #aea397;
   }
 
   .fr-h6,
