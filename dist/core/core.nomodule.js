@@ -1,4 +1,4 @@
-/*! DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
+/*! DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
 
 (function () {
   'use strict';
@@ -70,7 +70,7 @@
     prefix: 'fr',
     namespace: 'dsfr',
     organisation: '@gouvfr',
-    version: '1.6.0'
+    version: '1.7.0'
   };
 
   var LogLevel = function LogLevel (level, light, dark, logger) {
@@ -2200,7 +2200,8 @@
   }(DisclosureButton));
 
   var CollapseSelector = {
-    COLLAPSE: ns.selector('collapse')
+    COLLAPSE: ns.selector('collapse'),
+    COLLAPSING: ns.selector('collapsing')
   };
 
   /**
@@ -2229,6 +2230,7 @@
     };
 
     Collapse.prototype.transitionend = function transitionend (e) {
+      this.removeClass(CollapseSelector.COLLAPSING);
       if (!this.disclosed) {
         if (this.isLegacy) { this.style.maxHeight = ''; }
         else { this.style.removeProperty('--collapse-max-height'); }
@@ -2246,6 +2248,7 @@
       if (this.disclosed) { return; }
       this.unbound();
       this.request(function () {
+        this$1$1.addClass(CollapseSelector.COLLAPSING);
         this$1$1.adjust();
         this$1$1.request(function () {
           Disclosure.prototype.disclose.call(this$1$1, withhold);
@@ -2258,6 +2261,7 @@
 
       if (!this.disclosed) { return; }
       this.request(function () {
+        this$1$1.addClass(CollapseSelector.COLLAPSING);
         this$1$1.adjust();
         this$1$1.request(function () {
           Disclosure.prototype.conceal.call(this$1$1, withhold, preventFocus);

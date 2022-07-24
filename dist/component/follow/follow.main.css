@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -21,6 +21,7 @@
   --text-spacing: 0 0 1rem;
   background-color: var(--background-alt-blue-france);
 
+  --idle: transparent;
   --hover: var(--background-alt-blue-france-hover);
   --active: var(--background-alt-blue-france-active);
 }
@@ -83,6 +84,8 @@
 .fr-follow__social .fr-btns-group .fr-btn {
   width: auto;
   max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   justify-content: flex-start;
 }
 
@@ -90,10 +93,6 @@
   display: inline-flex;
   max-width: 100%;
   width: auto;
-}
-
-.fr-follow__social .fr-btns-group > li::before {
-  content: none;
 }
 
 .fr-follow__social .fr-btns-group:not(.fr-btns-group--sm):not(.fr-btns-group--lg) .fr-btn:not([class^=fr-icon-]):not([class*=" fr-icon-"]):not([class^=fr-fi-]):not([class*=" fr-fi-"]) {
@@ -240,16 +239,14 @@
 .fr-follow .fr-links-group .fr-btn {
   width: auto;
   max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .fr-follow .fr-links-group > li {
   display: inline-flex;
   max-width: 100%;
   width: auto;
-}
-
-.fr-follow .fr-links-group > li::before {
-  content: none;
 }
 
 .fr-follow__social .fr-link {
@@ -374,6 +371,7 @@
 .fr-follow .fr-input {
   background-color: var(--background-default-grey);
 
+  --idle: transparent;
   --hover: var(--background-default-grey-hover);
   --active: var(--background-default-grey-active);
 }

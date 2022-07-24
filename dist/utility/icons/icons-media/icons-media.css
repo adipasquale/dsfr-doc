@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -314,26 +314,26 @@
 
 .fr-fi-play-line::before,
 .fr-fi-play-line::after {
-  -webkit-mask-image: url("../../../icons/media/play-circle-line.svg") !important;
-  mask-image: url("../../../icons/media/play-circle-line.svg") !important;
+  -webkit-mask-image: url("../../../icons/media/play-circle-line.svg");
+  mask-image: url("../../../icons/media/play-circle-line.svg");
 }
 
 .fr-fi-play-fill::before,
 .fr-fi-play-fill::after {
-  -webkit-mask-image: url("../../../icons/media/play-circle-fill.svg") !important;
-  mask-image: url("../../../icons/media/play-circle-fill.svg") !important;
+  -webkit-mask-image: url("../../../icons/media/play-circle-fill.svg");
+  mask-image: url("../../../icons/media/play-circle-fill.svg");
 }
 
 .fr-icon-play-line::before,
 .fr-icon-play-line::after {
-  -webkit-mask-image: url("../../../icons/media/play-circle-line.svg") !important;
-  mask-image: url("../../../icons/media/play-circle-line.svg") !important;
+  -webkit-mask-image: url("../../../icons/media/play-circle-line.svg");
+  mask-image: url("../../../icons/media/play-circle-line.svg");
 }
 
 .fr-icon-play-fill::before,
 .fr-icon-play-fill::after {
-  -webkit-mask-image: url("../../../icons/media/play-circle-fill.svg") !important;
-  mask-image: url("../../../icons/media/play-circle-fill.svg") !important;
+  -webkit-mask-image: url("../../../icons/media/play-circle-fill.svg");
+  mask-image: url("../../../icons/media/play-circle-fill.svg");
 }
 
 @media (min-width: 36em) {
@@ -606,21 +606,21 @@
 
   .fr-fi-play-line::before,
   .fr-fi-play-line::after {
-    background-image: url("../../../icons/media/play-circle-line.svg") !important;
+    background-image: url("../../../icons/media/play-circle-line.svg");
   }
 
   .fr-fi-play-fill::before,
   .fr-fi-play-fill::after {
-    background-image: url("../../../icons/media/play-circle-fill.svg") !important;
+    background-image: url("../../../icons/media/play-circle-fill.svg");
   }
 
   .fr-icon-play-line::before,
   .fr-icon-play-line::after {
-    background-image: url("../../../icons/media/play-circle-line.svg") !important;
+    background-image: url("../../../icons/media/play-circle-line.svg");
   }
 
   .fr-icon-play-fill::before,
   .fr-icon-play-fill::after {
-    background-image: url("../../../icons/media/play-circle-fill.svg") !important;
+    background-image: url("../../../icons/media/play-circle-fill.svg");
   }
 }

@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -322,6 +322,7 @@
 .fr-pagination__link[aria-current] {
   background-color: var(--background-active-blue-france);
 
+  --idle: transparent;
   --hover: var(--background-active-blue-france-hover);
   --active: var(--background-active-blue-france-active);
   color: var(--text-inverted-blue-france);
@@ -331,7 +332,18 @@
 a.fr-pagination__link:not([aria-current]):not([href]) {
   color: var(--text-disabled-grey);
 }
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
 @media (min-width: 62em) {
+  /*! media lg */
   .fr-pagination__link--first.fr-pagination__link--lg-label {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -449,6 +461,13 @@ a.fr-pagination__link:not([aria-current]):not([href]) {
   .fr-pagination__link--last.fr-pagination__link--lg-label::before {
     content: none;
   }
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /**

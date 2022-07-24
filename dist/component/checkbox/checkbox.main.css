@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -165,15 +165,16 @@
 .fr-checkbox-group input[type=checkbox]:active:not(:disabled) + label::before {
   background-color: var(--background-active-blue-france);
 
+  --idle: transparent;
   --hover: var(--background-active-blue-france-hover);
   --active: var(--background-active-blue-france-active);
-  --data-uri-svg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23fff' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23fff' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
   background-image: var(--data-uri-svg);
 }
 
-:root[data-fr-theme=dark] .fr-checkbox-group input[type=checkbox]:checked + label::before,
-:root[data-fr-theme=dark] .fr-checkbox-group input[type=checkbox]:active:not(:disabled) + label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23161616' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+:root:where([data-fr-theme="dark"]) .fr-checkbox-group input[type=checkbox]:checked + label::before,
+:root:where([data-fr-theme="dark"]) .fr-checkbox-group input[type=checkbox]:active:not(:disabled) + label::before {
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23161616' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
 }
 
 .fr-checkbox-group input[type=checkbox]:disabled + label::before {
@@ -184,14 +185,15 @@
   color: var(--text-disabled-grey);
   background-color: var(--background-disabled-grey);
 
+  --idle: transparent;
   --hover: var(--background-disabled-grey-hover);
   --active: var(--background-disabled-grey-active);
-  --data-uri-svg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23929292' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
   background-image: var(--data-uri-svg);
 }
 
-:root[data-fr-theme=dark] .fr-checkbox-group input[type=checkbox]:disabled:checked + label::before {
-  --data-uri-svg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23666' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
+:root:where([data-fr-theme="dark"]) .fr-checkbox-group input[type=checkbox]:disabled:checked + label::before {
+  --data-uri-svg: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23666' d='M10 15.17l9.2-9.2 1.4 1.42L10 18l-6.36-6.36 1.4-1.42z'/></svg>");
 }
 
 .fr-checkbox-group--error input[type=checkbox] + label {
@@ -200,4 +202,16 @@
 
 .fr-checkbox-group--valid input[type=checkbox] + label {
   color: var(--text-default-success);
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
 }

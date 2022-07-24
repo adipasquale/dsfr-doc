@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -26,7 +26,7 @@ un padding de 4px et une marge négative en compensation sont mis en place afin 
 
 .fr-breadcrumb__button {
   background-image: var(--underline-img), var(--underline-img);
-  background-position: var(--underline-x) calc(100% - 0.0625em), var(--underline-x) calc(100% - 0.0625em);
+  background-position: var(--underline-x) 100%, var(--underline-x) calc(100% - 0.0625em);
   background-repeat: no-repeat, no-repeat;
   transition: background-size 0s;
   background-size: var(--underline-hover-width) 0.125em, var(--underline-idle-width) 0.0625em;
@@ -102,7 +102,11 @@ un padding de 4px et une marge négative en compensation sont mis en place afin 
 .fr-breadcrumb__link[aria-current] {
   color: var(--text-active-grey);
 }
+@media (min-width: 36em) {
+  /*! media sm */
+}
 @media (min-width: 48em) {
+  /*! media md */
   .fr-breadcrumb {
     margin-bottom: 2.5rem;
   }
@@ -129,4 +133,10 @@ un padding de 4px et une marge négative en compensation sont mis en place afin 
   .fr-breadcrumb__list {
     transform: none;
   }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
 }

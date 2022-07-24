@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -34,6 +34,8 @@
 .fr-share .fr-btns-group .fr-btn {
   width: auto;
   max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   justify-content: flex-start;
 }
 
@@ -41,10 +43,6 @@
   display: inline-flex;
   max-width: 100%;
   width: auto;
-}
-
-.fr-share .fr-btns-group > li::before {
-  content: none;
 }
 
 .fr-share .fr-btns-group:not(.fr-btns-group--sm):not(.fr-btns-group--lg) .fr-btn:not([class^=fr-icon-]):not([class*=" fr-icon-"]):not([class^=fr-fi-]):not([class*=" fr-fi-"]) {
@@ -123,16 +121,14 @@
 .fr-share__group .fr-btn {
   width: auto;
   max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .fr-share__group > li {
   display: inline-flex;
   max-width: 100%;
   width: auto;
-}
-
-.fr-share__group > li::before {
-  content: none;
 }
 
 .fr-share__link {
@@ -328,8 +324,18 @@ a.fr-share__link:not([href]) {
   --hover: inherit;
   --active: inherit;
 }
+@media (min-width: 36em) {
+  /*! media sm */
+}
 @media (min-width: 48em) {
+  /*! media md */
   .fr-share__text {
     max-width: 18rem;
   }
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
 }

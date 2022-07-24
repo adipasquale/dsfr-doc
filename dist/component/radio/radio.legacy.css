@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -18,11 +18,23 @@
   * un état check
   */
 }
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /**
   * Correctif radio
   */
-  .fr-fieldset--inline .fr-radio-group:last-child input[type=radio] + label[style*="background-image:"] {
+  .fr-fieldset--inline .fr-radio-rich:last-child input[type=radio] + label {
     margin-bottom: 0.5rem !important;
   }
 
@@ -67,11 +79,11 @@
   }
 
   .fr-radio-rich__img {
-    box-shadow: inset 1px 0 0 0 #e5e5e5;
+    box-shadow: inset 1px 0 0 0 #ddd;
   }
 
   .fr-radio-rich input[type=radio] + label {
-    box-shadow: inset 0 0 0 1px #e5e5e5;
+    box-shadow: inset 0 0 0 1px #ddd;
     background-color: #fff;
   }
 

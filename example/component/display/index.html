@@ -16,33 +16,35 @@
     <link href="../../../dist/core/core.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/link/link.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/scheme/scheme.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/logo/logo.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/button/button.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/scheme/scheme.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/accordion/accordion.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/logo/logo.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/badge/badge.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/footer/footer.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/modal/modal.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/utility/utility.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/navigation/navigation.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/input/input.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/footer/footer.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/utility/utility.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/search/search.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/translate/translate.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/header/header.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/core/core.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/form/form.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/link/link.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/logo/logo.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/button/button.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/accordion/accordion.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/logo/logo.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/badge/badge.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/footer/footer.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/modal/modal.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/utility/utility.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/navigation/navigation.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/input/input.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/footer/footer.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/utility/utility.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/search/search.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/translate/translate.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/header/header.legacy.css" rel="stylesheet" file="legacy">
     <style>
         code[class*="language-"],
@@ -123,28 +125,24 @@
                         <div class="fr-header__brand fr-enlarge-link">
                             <div class="fr-header__brand-top">
                                 <div class="fr-header__logo">
-                                    <a href="/" title="Accueil - [À MODIFIER - nom de l’entité (ministère, secrétariat d‘état, gouvernement)]">
+                                    <a href="/" title="Accueil">
                                         <p class="fr-logo">
-                                            Intitulé
-                                            <br>officiel
                                         </p>
                                     </a>
                                 </div>
                                 <div class="fr-header__navbar">
-                                    <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-1128" aria-haspopup="menu" id="button-1129" title="Menu">
+                                    <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-1134" aria-haspopup="menu" id="button-1135" title="Menu">
                                         Menu
                                     </button>
                                 </div>
-                            </div>
-                            <div class="fr-header__service">
                             </div>
                         </div>
                         <div class="fr-header__tools">
                             <div class="fr-header__tools-links">
                                 <ul class="fr-btns-group">
                                     <li>
-                                        <button class="fr-btn--display fr-btn" aria-controls="fr-theme-modal" data-fr-opened="false" title="Paramètres d'affichage">
-                                            Paramètres d&#39;affichage
+                                        <button class="fr-btn fr-icon-theme-fill fr-btn--icon-left" aria-controls="fr-theme-modal" data-fr-opened="false">
+                                            Paramètres d'affichage
                                         </button>
                                     </li>
                                 </ul>
@@ -153,9 +151,9 @@
                     </div>
                 </div>
             </div>
-            <div class="fr-header__menu fr-modal" id="modal-1128" aria-labelledby="button-1129">
+            <div class="fr-header__menu fr-modal" id="modal-1134" aria-labelledby="button-1135">
                 <div class="fr-container">
-                    <button class="fr-btn--close fr-btn" aria-controls="modal-1128" title="Fermer">
+                    <button class="fr-btn--close fr-btn" aria-controls="modal-1134" title="Fermer">
                         Fermer
                     </button>
                     <div class="fr-header__menu-links">
@@ -163,8 +161,8 @@
                     <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
                         <ul class="fr-nav__list">
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1130">Entrée menu</button>
-                                <div class="fr-collapse fr-menu" id="menu-1130">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1136">Entrée menu</button>
+                                <div class="fr-collapse fr-menu" id="menu-1136">
                                     <ul class="fr-menu__list">
                                         <li>
                                             <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
@@ -188,12 +186,12 @@
                                 </div>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1131">Entrée mega menu</button>
-                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1131">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1137">Entrée mega menu</button>
+                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1137">
                                     <div class="fr-container fr-container--fluid fr-container-lg">
                                         <div class="fr-grid-row fr-grid-row-lg--gutters">
                                             <div class="fr-col-12 fr-mb-n3v">
-                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1131" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1137" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
@@ -314,8 +312,8 @@
                                 <a class="fr-nav__link" href="#" target="_self">accès direct</a>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1132" aria-current="true">Entrée menu active</button>
-                                <div class="fr-collapse fr-menu" id="menu-1132">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1138" aria-current="true">Entrée menu active</button>
+                                <div class="fr-collapse fr-menu" id="menu-1138">
                                     <ul class="fr-menu__list">
                                         <li>
                                             <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
@@ -339,12 +337,12 @@
                                 </div>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1133">Entrée mega menu</button>
-                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1133">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1139">Entrée mega menu</button>
+                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1139">
                                     <div class="fr-container fr-container--fluid fr-container-lg">
                                         <div class="fr-grid-row fr-grid-row-lg--gutters">
                                             <div class="fr-col-12 fr-mb-n3v">
-                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1133" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1139" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
@@ -465,12 +463,12 @@
                                 <a class="fr-nav__link" href="#" target="_self">accès direct</a>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1134">Entrée mega menu</button>
-                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1134">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1140">Entrée mega menu</button>
+                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1140">
                                     <div class="fr-container fr-container--fluid fr-container-lg">
                                         <div class="fr-grid-row fr-grid-row-lg--gutters">
                                             <div class="fr-col-12 fr-mb-n3v">
-                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1134" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1140" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
@@ -579,8 +577,8 @@
                                 </div>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1135">Entrée menu</button>
-                                <div class="fr-collapse fr-menu" id="menu-1135">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1141">Entrée menu</button>
+                                <div class="fr-collapse fr-menu" id="menu-1141">
                                     <ul class="fr-menu__list">
                                         <li>
                                             <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
@@ -613,17 +611,17 @@
             <h4>bouton ouverture thèmes</h4>
             <div class="fr-mb-6v">
                 <button class="fr-btn--display fr-btn" aria-controls="fr-theme-modal" data-fr-opened="false" title="Paramètres d'affichage">
-                    Paramètres d&#39;affichage
+                    Paramètres d'affichage
                 </button>
             </div>
             <div class="fr-mb-12v">
                 <section class="fr-accordion">
                     <h3 class="fr-accordion__title">
-                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1136">Extrait de code</button>
+                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1142">Extrait de code</button>
                     </h3>
-                    <div class="fr-collapse" id="snippet-1136">
+                    <div class="fr-collapse" id="snippet-1142">
                         <pre class=" language-html"><code>&lt;button class="fr-btn--display fr-btn fr-btn--display fr-btn" aria-controls="fr-theme-modal" data-fr-opened="false" title="Paramètres d'affichage"&gt;
-    Paramètres d&amp;#39;affichage
+    Paramètres d'affichage
 &lt;/button&gt;
 </code></pre>
                     </div>
@@ -634,9 +632,9 @@
             <div class="fr-mb-12v">
                 <section class="fr-accordion">
                     <h3 class="fr-accordion__title">
-                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1137">Extrait de code</button>
+                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1143">Extrait de code</button>
                     </h3>
-                    <div class="fr-collapse" id="snippet-1137">
+                    <div class="fr-collapse" id="snippet-1143">
                         <pre class=" language-html"><code>&lt;dialog id="fr-theme-modal" class="fr-modal" role="dialog" aria-labelledby="fr-theme-modal-title"&gt;
     &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
         &lt;div class="fr-grid-row fr-grid-row--center"&gt;
@@ -664,7 +662,7 @@
                                                 Thème clair
                                             &lt;/label&gt;
                                             &lt;div class="fr-radio-rich__img"&gt;
-                                                &lt;svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px"&gt;
+                                                &lt;svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80"&gt;
                                                     &lt;use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/light.svg#artwork-decorative"&gt;&lt;/use&gt;
                                                     &lt;use class="fr-artwork-minor" xlink:href="../../../dist/artwork/light.svg#artwork-minor"&gt;&lt;/use&gt;
                                                     &lt;use class="fr-artwork-major" xlink:href="../../../dist/artwork/light.svg#artwork-major"&gt;&lt;/use&gt;
@@ -677,7 +675,7 @@
                                                 Thème sombre
                                             &lt;/label&gt;
                                             &lt;div class="fr-radio-rich__img"&gt;
-                                                &lt;svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px"&gt;
+                                                &lt;svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80"&gt;
                                                     &lt;use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/dark.svg#artwork-decorative"&gt;&lt;/use&gt;
                                                     &lt;use class="fr-artwork-minor" xlink:href="../../../dist/artwork/dark.svg#artwork-minor"&gt;&lt;/use&gt;
                                                     &lt;use class="fr-artwork-major" xlink:href="../../../dist/artwork/dark.svg#artwork-major"&gt;&lt;/use&gt;
@@ -691,7 +689,7 @@
                                                 &lt;span class="fr-hint-text"&gt;Utilise les paramètres système.&lt;/span&gt;
                                             &lt;/label&gt;
                                             &lt;div class="fr-radio-rich__img"&gt;
-                                                &lt;svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px"&gt;
+                                                &lt;svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80"&gt;
                                                     &lt;use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/system.svg#artwork-decorative"&gt;&lt;/use&gt;
                                                     &lt;use class="fr-artwork-minor" xlink:href="../../../dist/artwork/system.svg#artwork-minor"&gt;&lt;/use&gt;
                                                     &lt;use class="fr-artwork-major" xlink:href="../../../dist/artwork/system.svg#artwork-major"&gt;&lt;/use&gt;
@@ -713,11 +711,11 @@
                 </section>
             </div>
         </div>
-        <footer class="fr-footer" role="contentinfo" id="footer-1127">
+        <footer class="fr-footer" role="contentinfo" id="footer-1133">
             <div class="fr-container">
                 <div class="fr-footer__body">
                     <div class="fr-footer__brand fr-enlarge-link">
-                        <a href="/" title="Retour à l’accueil">
+                        <a href="" title="">
                             <p class="fr-logo">
                                 république
                                 <br>française
@@ -761,7 +759,7 @@
                         </li>
                         <li class="fr-footer__bottom-item">
                             <button class="fr-btn--display fr-btn" aria-controls="fr-theme-modal" data-fr-opened="false" title="Paramètres d'affichage">
-                                Paramètres d&#39;affichage
+                                Paramètres d'affichage
                             </button>
                         </li>
                     </ul>
@@ -794,7 +792,7 @@
                                     </a>
                                 </div>
                                 <div class="fr-header__navbar">
-                                    <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-1139" aria-haspopup="menu" id="button-1140" title="Menu">
+                                    <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-1145" aria-haspopup="menu" id="button-1146" title="Menu">
                                         Menu
                                     </button>
                                 </div>
@@ -814,16 +812,16 @@
                     </div>
                 </div>
             </div>
-            <div class="fr-header__menu fr-modal" id="modal-1139" aria-labelledby="button-1140">
+            <div class="fr-header__menu fr-modal" id="modal-1145" aria-labelledby="button-1146">
                 <div class="fr-container">
-                    <button class="fr-link--close fr-link" aria-controls="modal-1139">Fermer</button>
+                    <button class="fr-link--close fr-link" aria-controls="modal-1145">Fermer</button>
                     <div class="fr-header__menu-links">
                     </div>
                     <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
                         <ul class="fr-nav__list">
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1141">Entrée menu</button>
-                                <div class="fr-collapse fr-menu" id="menu-1141">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1147">Entrée menu</button>
+                                <div class="fr-collapse fr-menu" id="menu-1147">
                                     <ul class="fr-menu__list">
                                         <li>
                                             <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
@@ -847,12 +845,12 @@
                                 </div>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1142">Entrée mega menu</button>
-                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1142">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1148">Entrée mega menu</button>
+                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1148">
                                     <div class="fr-container fr-container--fluid fr-container-lg">
                                         <div class="fr-grid-row fr-grid-row-lg--gutters">
                                             <div class="fr-col-12 fr-mb-n3v">
-                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1142" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1148" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
@@ -973,8 +971,8 @@
                                 <a class="fr-nav__link" href="#" target="_self">accès direct</a>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1143" aria-current="true">Entrée menu active</button>
-                                <div class="fr-collapse fr-menu" id="menu-1143">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1149" aria-current="true">Entrée menu active</button>
+                                <div class="fr-collapse fr-menu" id="menu-1149">
                                     <ul class="fr-menu__list">
                                         <li>
                                             <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
@@ -998,12 +996,12 @@
                                 </div>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1144">Entrée mega menu</button>
-                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1144">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1150">Entrée mega menu</button>
+                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1150">
                                     <div class="fr-container fr-container--fluid fr-container-lg">
                                         <div class="fr-grid-row fr-grid-row-lg--gutters">
                                             <div class="fr-col-12 fr-mb-n3v">
-                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1144" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1150" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
@@ -1124,12 +1122,12 @@
                                 <a class="fr-nav__link" href="#" target="_self">accès direct</a>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1145">Entrée mega menu</button>
-                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1145">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="mega-menu-1151">Entrée mega menu</button>
+                                <div class="fr-collapse fr-mega-menu" id="mega-menu-1151">
                                     <div class="fr-container fr-container--fluid fr-container-lg">
                                         <div class="fr-grid-row fr-grid-row-lg--gutters">
                                             <div class="fr-col-12 fr-mb-n3v">
-                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1145" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="mega-menu-1151" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
@@ -1238,8 +1236,8 @@
                                 </div>
                             </li>
                             <li class="fr-nav__item">
-                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1146">Entrée menu</button>
-                                <div class="fr-collapse fr-menu" id="menu-1146">
+                                <button class="fr-nav__btn" aria-expanded="false" aria-controls="menu-1152">Entrée menu</button>
+                                <div class="fr-collapse fr-menu" id="menu-1152">
                                     <ul class="fr-menu__list">
                                         <li>
                                             <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
@@ -1278,9 +1276,9 @@
             <div class="fr-mb-12v">
                 <section class="fr-accordion">
                     <h3 class="fr-accordion__title">
-                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1147">Extrait de code</button>
+                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1153">Extrait de code</button>
                     </h3>
-                    <div class="fr-collapse" id="snippet-1147">
+                    <div class="fr-collapse" id="snippet-1153">
                         <pre class=" language-html"><code>&lt;button class="fr-link fr-icon-theme-fill fr-link--icon-left" aria-controls="fr-theme-modal-deprecated" data-fr-opened="false"&gt;
     Paramètres d'affichage
 &lt;/button&gt;
@@ -1356,9 +1354,9 @@
             <div class="fr-mb-12v">
                 <section class="fr-accordion">
                     <h3 class="fr-accordion__title">
-                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1148">Extrait de code</button>
+                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1154">Extrait de code</button>
                     </h3>
-                    <div class="fr-collapse" id="snippet-1148">
+                    <div class="fr-collapse" id="snippet-1154">
                         <pre class=" language-html"><code>&lt;dialog id="fr-theme-modal-deprecated" class="fr-modal" role="dialog" aria-labelledby="fr-theme-modal-deprecated-title"&gt;
     &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
         &lt;div class="fr-grid-row fr-grid-row--center"&gt;
@@ -1426,11 +1424,11 @@
                 </section>
             </div>
         </div>
-        <footer class="fr-footer" role="contentinfo" id="footer-1138">
+        <footer class="fr-footer" role="contentinfo" id="footer-1144">
             <div class="fr-container">
                 <div class="fr-footer__body">
                     <div class="fr-footer__brand fr-enlarge-link">
-                        <a href="/" title="Retour à l’accueil">
+                        <a href="" title="">
                             <p class="fr-logo">
                                 république
                                 <br>française
@@ -1484,7 +1482,7 @@
             </div>
         </footer>
     </div>
-    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false">
+    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false" style="z-index: 1600">
         Label bouton
     </button>
     <dialog id="fr-theme-modal" class="fr-modal" role="dialog" aria-labelledby="fr-theme-modal-title">
@@ -1514,7 +1512,7 @@
                                                     Thème clair
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/light.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/light.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/light.svg#artwork-major"></use>
@@ -1527,7 +1525,7 @@
                                                     Thème sombre
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/dark.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/dark.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/dark.svg#artwork-major"></use>
@@ -1541,7 +1539,7 @@
                                                     <span class="fr-hint-text">Utilise les paramètres système.</span>
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/system.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/system.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/system.svg#artwork-major"></use>

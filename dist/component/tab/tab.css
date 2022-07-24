@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -160,11 +160,12 @@
 
 .fr-tabs__tab[aria-selected=true] {
   background-size: 100% 2px, 1px calc(100% - 1px), 1px calc(100% - 1px), 0 1px;
-  color: var(--text-active-blue-france);
   background-color: var(--background-default-grey);
 
+  --idle: transparent;
   --hover: var(--background-default-grey-hover);
   --active: var(--background-default-grey-active);
+  color: var(--text-active-blue-france);
 }
 
 .fr-tabs__panel {
@@ -266,13 +267,14 @@
   box-shadow: inset 2rem 0 1.5rem -2rem #161616, inset -2rem 0 1.5rem -2rem #161616;
 }
 
-:root[data-fr-theme=dark] .fr-tabs__shadow > .fr-tabs__list::before {
+:root:where([data-fr-theme="dark"]) .fr-tabs__shadow > .fr-tabs__list::before {
   opacity: 1;
 }
 
 .fr-tabs__tab:not([aria-selected=true]) {
   background-color: var(--background-action-low-blue-france);
 
+  --idle: transparent;
   --hover: var(--background-action-low-blue-france-hover);
   --active: var(--background-action-low-blue-france-active);
   color: var(--text-action-high-grey);
@@ -282,10 +284,17 @@
   color: var(--text-disabled-grey);
   background-color: var(--background-disabled-grey);
 
+  --idle: transparent;
   --hover: var(--background-disabled-grey-hover);
   --active: var(--background-disabled-grey-active);
 }
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
 @media (min-width: 48em) {
+  /*! media md */
   .fr-tabs--viewport-width {
     margin-left: 0;
     margin-right: 0;
@@ -299,6 +308,18 @@
   .fr-tabs__panel:focus-visible {
     outline-offset: calc(-2rem + 2px);
   }
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /**
@@ -339,15 +360,15 @@
   }
 
   .fr-tabs {
-    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+    box-shadow: inset 0 -1px 0 0 #ddd;
   }
 
   .fr-tabs::before {
-    box-shadow: inset 0 1px 0 0 #e5e5e5, inset 1px 0 0 0 #e5e5e5, inset -1px 0 0 0 #e5e5e5;
+    box-shadow: inset 0 1px 0 0 #ddd, inset 1px 0 0 0 #ddd, inset -1px 0 0 0 #ddd;
   }
 
   .fr-tabs__tab {
-    background-image: linear-gradient(0deg, #000091, #000091), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5), linear-gradient(0deg, #e5e5e5, #e5e5e5);
+    background-image: linear-gradient(0deg, #000091, #000091), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd), linear-gradient(0deg, #ddd, #ddd);
     box-shadow: 0 2px 0 0 #fff;
   }
 
@@ -357,8 +378,8 @@
   }
 
   .fr-tabs__tab[aria-selected=true] {
-    color: #000091;
     background-color: #fff;
+    color: #000091;
   }
 
   .fr-tabs__tab:disabled {

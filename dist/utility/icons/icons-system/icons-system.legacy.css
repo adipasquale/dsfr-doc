@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @media (min-width: 36em) {
   /*! media sm */
@@ -812,21 +812,21 @@
 
   .fr-fi-delete-line::before,
   .fr-fi-delete-line::after {
-    background-image: url("../../../icons/system/delete-bin-line.svg") !important;
+    background-image: url("../../../icons/system/delete-bin-line.svg");
   }
 
   .fr-fi-delete-fill::before,
   .fr-fi-delete-fill::after {
-    background-image: url("../../../icons/system/delete-bin-fill.svg") !important;
+    background-image: url("../../../icons/system/delete-bin-fill.svg");
   }
 
   .fr-icon-delete-line::before,
   .fr-icon-delete-line::after {
-    background-image: url("../../../icons/system/delete-bin-line.svg") !important;
+    background-image: url("../../../icons/system/delete-bin-line.svg");
   }
 
   .fr-icon-delete-fill::before,
   .fr-icon-delete-fill::after {
-    background-image: url("../../../icons/system/delete-bin-fill.svg") !important;
+    background-image: url("../../../icons/system/delete-bin-fill.svg");
   }
 }

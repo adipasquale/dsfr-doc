@@ -2,7 +2,7 @@
     "path": "src",
     "ascendants": [],
     "style": {
-        "level": 7,
+        "level": 6,
         "files": [
             "main",
             "legacy"
@@ -22,6 +22,7 @@
     "draft": false,
     "doc": null,
     "prepend": false,
+    "noHeading": false,
     "module": true,
     "nomodule": true,
     "detached": false,
@@ -30,7 +31,12 @@
     "example": {
         "style": [],
         "script": [],
-        "file": "example/index.html"
+        "root": {
+            "hasData": true,
+            "src": "src/example/index.ejs",
+            "dest": "example/index.html",
+            "subdir": []
+        }
     },
     "dependencies": {
         "style": [],
@@ -76,6 +82,7 @@
             "tag",
             "tile",
             "toggle",
+            "translate",
             "upload",
             "component",
             "core",
@@ -150,7 +157,9 @@
                     "url": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331372/Grille+et+points+de+rupture+-+Grid+and+breakpoints"
                 }
             ],
+            "wrapper": "container",
             "prepend": false,
+            "noHeading": false,
             "module": true,
             "nomodule": true,
             "detached": false,
@@ -168,7 +177,92 @@
                     "accordion",
                     "table"
                 ],
-                "file": "example/core/index.html"
+                "root": {
+                    "hasData": true,
+                    "src": "src/core/example/index.ejs",
+                    "dest": "example/core/index.html",
+                    "subdir": [
+                        "artwork",
+                        "collapse",
+                        "display",
+                        "favicon",
+                        "grid",
+                        "icon",
+                        "media",
+                        "reset",
+                        "spacing",
+                        "typography",
+                        "utility"
+                    ],
+                    "children": [
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/artwork/index.ejs",
+                            "dest": "example/core/artwork/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/collapse/index.ejs",
+                            "dest": "example/core/collapse/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/display/index.ejs",
+                            "dest": "example/core/display/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/favicon/index.ejs",
+                            "dest": "example/core/favicon/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/grid/index.ejs",
+                            "dest": "example/core/grid/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/icon/index.ejs",
+                            "dest": "example/core/icon/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/media/index.ejs",
+                            "dest": "example/core/media/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/reset/index.ejs",
+                            "dest": "example/core/reset/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/spacing/index.ejs",
+                            "dest": "example/core/spacing/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/typography/index.ejs",
+                            "dest": "example/core/typography/index.html",
+                            "subdir": []
+                        },
+                        {
+                            "hasData": true,
+                            "src": "src/core/example/utility/index.ejs",
+                            "dest": "example/core/utility/index.html",
+                            "subdir": []
+                        }
+                    ]
+                }
             },
             "dependencies": {
                 "style": [],
@@ -218,6 +312,7 @@
             "description": "scheme permet la définition de couleurs principales et du darkmode pour le Design System de l'Etat.",
             "draft": true,
             "prepend": false,
+            "noHeading": false,
             "module": true,
             "nomodule": false,
             "detached": false,
@@ -234,7 +329,12 @@
                     "modal",
                     "header"
                 ],
-                "file": "example/scheme/index.html"
+                "root": {
+                    "hasData": true,
+                    "src": "src/scheme/example/index.ejs",
+                    "dest": "example/scheme/index.html",
+                    "subdir": []
+                }
             },
             "dependencies": {
                 "style": [
@@ -284,6 +384,7 @@
             "draft": true,
             "wrapper": "col-8",
             "prepend": false,
+            "noHeading": false,
             "module": false,
             "nomodule": true,
             "detached": false,
@@ -292,7 +393,12 @@
             "example": {
                 "style": [],
                 "script": [],
-                "file": "example/legacy/index.html"
+                "root": {
+                    "hasData": true,
+                    "src": "src/legacy/example/index.ejs",
+                    "dest": "example/legacy/index.html",
+                    "subdir": []
+                }
             },
             "dependencies": {
                 "style": [],
@@ -336,12 +442,16 @@
             "description": "",
             "draft": true,
             "prepend": false,
+            "noHeading": false,
             "module": true,
             "nomodule": true,
             "detached": true,
             "filename": "dsfr",
             "inject": false,
-            "example": false,
+            "example": {
+                "style": [],
+                "script": []
+            },
             "dependencies": {
                 "style": [],
                 "script": []
@@ -367,7 +477,7 @@
                 "dsfr"
             ],
             "style": {
-                "level": 6,
+                "level": 5,
                 "files": [
                     "main",
                     "legacy"
@@ -387,6 +497,7 @@
             "draft": false,
             "doc": null,
             "prepend": false,
+            "noHeading": false,
             "module": true,
             "nomodule": true,
             "detached": false,
@@ -395,7 +506,12 @@
             "example": {
                 "style": [],
                 "script": [],
-                "file": "example/component/index.html"
+                "root": {
+                    "hasData": true,
+                    "src": "src/component/example/index.ejs",
+                    "dest": "example/component/index.html",
+                    "subdir": []
+                }
             },
             "dependencies": {
                 "style": [
@@ -446,6 +562,7 @@
                     "tag",
                     "tile",
                     "toggle",
+                    "translate",
                     "upload"
                 ],
                 "script": [
@@ -473,7 +590,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 2,
+                        "level": 1,
                         "files": [
                             "main",
                             "legacy"
@@ -493,6 +610,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/312082509/Accord+on+-+Accordion",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -506,12 +624,26 @@
                         "script": [
                             "tab"
                         ],
-                        "file": "example/component/accordion/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/accordion/example/index.ejs",
+                            "dest": "example/component/accordion/index.html",
+                            "subdir": [
+                                "imbrication"
+                            ],
+                            "children": [
+                                {
+                                    "hasData": true,
+                                    "src": "src/component/accordion/example/imbrication/index.ejs",
+                                    "dest": "example/component/accordion/imbrication/index.html",
+                                    "subdir": []
+                                }
+                            ]
+                        }
                     },
                     "dependencies": {
                         "style": [
-                            "core",
-                            "link"
+                            "core"
                         ],
                         "script": [
                             "core"
@@ -525,7 +657,6 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "accordion"
                         ],
                         "script": [
@@ -535,8 +666,7 @@
                         ]
                     },
                     "combination": [
-                        "core",
-                        "link"
+                        "core"
                     ]
                 },
                 {
@@ -559,6 +689,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/864190467/",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -567,7 +698,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/upload/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/upload/example/index.ejs",
+                            "dest": "example/component/upload/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [],
@@ -593,7 +729,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -607,6 +743,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/736362500",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -615,7 +752,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/alert/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/alert/example/index.ejs",
+                            "dest": "example/component/alert/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -632,7 +774,6 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "button",
                             "alert"
                         ],
@@ -650,7 +791,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 2,
+                        "level": 1,
                         "files": [
                             "main",
                             "legacy"
@@ -664,6 +805,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/851869737/",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -672,12 +814,16 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/badge/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/badge/example/index.ejs",
+                            "dest": "example/component/badge/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
-                            "core",
-                            "link"
+                            "core"
                         ],
                         "script": []
                     },
@@ -689,14 +835,12 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "badge"
                         ],
                         "script": []
                     },
                     "combination": [
-                        "core",
-                        "link"
+                        "core"
                     ]
                 },
                 {
@@ -706,7 +850,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -719,6 +863,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/992903190/",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -727,7 +872,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/notice/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/notice/example/index.ejs",
+                            "dest": "example/component/notice/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -744,7 +894,6 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "button",
                             "notice"
                         ],
@@ -762,7 +911,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 4,
+                        "level": 3,
                         "files": [
                             "main",
                             "legacy"
@@ -776,6 +925,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217186376/Barre+de+recherche+-+Search+bar",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -784,7 +934,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/search/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/search/example/index.ejs",
+                            "dest": "example/component/search/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -803,7 +958,6 @@
                         "style": [
                             "core",
                             "form",
-                            "link",
                             "button",
                             "input",
                             "search"
@@ -837,6 +991,7 @@
                     "doc": null,
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -845,7 +1000,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/logo/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/logo/example/index.ejs",
+                            "dest": "example/component/logo/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -876,7 +1036,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 2,
+                        "level": 1,
                         "files": [
                             "main",
                             "legacy"
@@ -896,6 +1056,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217284660/Boutons+-+Buttons",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -904,12 +1065,16 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/button/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/button/example/index.ejs",
+                            "dest": "example/component/button/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
-                            "core",
-                            "link"
+                            "core"
                         ],
                         "script": [
                             "core"
@@ -923,7 +1088,6 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "button"
                         ],
                         "script": [
@@ -933,8 +1097,7 @@
                         ]
                     },
                     "combination": [
-                        "core",
-                        "link"
+                        "core"
                     ]
                 },
                 {
@@ -956,15 +1119,16 @@
                                 "main"
                             ]
                         },
-                        "dist": "standalone/connect",
-                        "content": {
-                            "file": "src/component/connect/content.json",
-                            "dest": ".config/subsets/connect.scss"
-                        },
+                        "dist": "standalone/component/connect",
                         "example": {
-                            "src": "src/component/connect/standalone/index.ejs",
-                            "path": "src/component/connect/example/index.ejs",
-                            "dest": "standalone/connect/index.html"
+                            "style": [],
+                            "script": [],
+                            "root": {
+                                "hasData": true,
+                                "src": "src/component/connect/standalone/example/index.ejs",
+                                "dest": "standalone/component/connect/index.html",
+                                "subdir": []
+                            }
                         }
                     },
                     "type": "package",
@@ -975,15 +1139,31 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/967868417",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
                     "filename": "connect",
                     "inject": false,
+                    "fontSubset": {
+                        "Regular": [
+                            "default.login"
+                        ],
+                        "Bold": [
+                            "default.brand",
+                            "plus.brand",
+                            "agent.brand"
+                        ]
+                    },
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/connect/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/connect/example/index.ejs",
+                            "dest": "example/component/connect/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1037,6 +1217,7 @@
                     ],
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1045,7 +1226,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/radio/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/radio/example/index.ejs",
+                            "dest": "example/component/radio/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1079,7 +1265,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -1092,6 +1278,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331445/Carte+-+Card",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1100,7 +1287,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/card/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/card/example/index.ejs",
+                            "dest": "example/component/card/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1157,6 +1349,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217251933/Case+cocher+-+Checkbox",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1165,7 +1358,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/checkbox/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/checkbox/example/index.ejs",
+                            "dest": "example/component/checkbox/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1199,7 +1397,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -1213,6 +1411,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217088099/Champs+de+saisie+-+Text+input",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1221,7 +1420,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/input/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/input/example/index.ejs",
+                            "dest": "example/component/input/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1240,7 +1444,6 @@
                         "style": [
                             "core",
                             "form",
-                            "link",
                             "button",
                             "input"
                         ],
@@ -1273,6 +1476,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/771358744/",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1281,7 +1485,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/quote/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/quote/example/index.ejs",
+                            "dest": "example/component/quote/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1312,7 +1521,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -1326,6 +1535,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019554/M+dias+int+gr+s+au+contenu+-+Responsive+medias",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1334,7 +1544,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/content/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/content/example/index.ejs",
+                            "dest": "example/component/content/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1351,7 +1566,6 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "button",
                             "content"
                         ],
@@ -1369,7 +1583,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 5,
+                        "level": 4,
                         "files": [
                             "main",
                             "legacy"
@@ -1388,6 +1602,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222789846/En-t+te+-+Header",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1396,7 +1611,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/header/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/header/example/index.ejs",
+                            "dest": "example/component/header/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1407,7 +1627,8 @@
                             "navigation",
                             "modal",
                             "search",
-                            "badge"
+                            "badge",
+                            "translate"
                         ],
                         "script": [
                             "core",
@@ -1424,14 +1645,15 @@
                         "style": [
                             "core",
                             "link",
+                            "button",
                             "logo",
                             "form",
-                            "button",
                             "badge",
                             "navigation",
                             "modal",
                             "input",
                             "search",
+                            "translate",
                             "header"
                         ],
                         "script": [
@@ -1449,6 +1671,7 @@
                         "badge",
                         "button",
                         "search",
+                        "translate",
                         "navigation",
                         "modal"
                     ]
@@ -1480,6 +1703,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019278/Fil+d+Ariane+-+Breadcrumb",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1488,7 +1712,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/breadcrumb/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/breadcrumb/example/index.ejs",
+                            "dest": "example/component/breadcrumb/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1539,6 +1768,7 @@
                     "doc": null,
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1553,7 +1783,12 @@
                             "button"
                         ],
                         "script": [],
-                        "file": "example/component/form/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/form/example/index.ejs",
+                            "dest": "example/component/form/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1584,7 +1819,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 4,
+                        "level": 3,
                         "files": [
                             "main",
                             "legacy"
@@ -1598,6 +1833,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/609189956/",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1608,7 +1844,12 @@
                             "content"
                         ],
                         "script": [],
-                        "file": "example/component/consent/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/consent/example/index.ejs",
+                            "dest": "example/component/consent/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1633,8 +1874,8 @@
                         "style": [
                             "core",
                             "link",
-                            "form",
                             "button",
+                            "form",
                             "radio",
                             "modal",
                             "consent"
@@ -1675,6 +1916,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/1010860097",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1683,7 +1925,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/stepper/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/stepper/example/index.ejs",
+                            "dest": "example/component/stepper/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1734,6 +1981,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/368935138/Interrupteur+-+Toggle+switch",
                     "wrapper": "container",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1742,7 +1990,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/toggle/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/toggle/example/index.ejs",
+                            "dest": "example/component/toggle/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1782,7 +2035,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 4,
+                        "level": 3,
                         "files": [
                             "main",
                             "legacy"
@@ -1795,6 +2048,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/779747332",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1803,7 +2057,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/follow/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/follow/example/index.ejs",
+                            "dest": "example/component/follow/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1822,7 +2081,6 @@
                         "style": [
                             "core",
                             "form",
-                            "link",
                             "button",
                             "input",
                             "follow"
@@ -1856,6 +2114,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217284725/Liens+-+Links",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1864,7 +2123,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/link/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/link/example/index.ejs",
+                            "dest": "example/component/link/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1908,6 +2172,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/260014417/Liens+d+vitement+-+Skiplinks",
                     "prepend": true,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1923,7 +2188,12 @@
                             "header",
                             "modal"
                         ],
-                        "file": "example/component/skiplink/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/skiplink/example/index.ejs",
+                            "dest": "example/component/skiplink/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -1971,6 +2241,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019306/Liste+d+roulante+-+Select",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -1979,7 +2250,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/select/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/select/example/index.ejs",
+                            "dest": "example/component/select/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2032,6 +2308,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/258998801/Menu+lat+ral+-+Side+menu",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2040,7 +2317,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/sidemenu/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/sidemenu/example/index.ejs",
+                            "dest": "example/component/sidemenu/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2077,7 +2359,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -2091,6 +2373,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331196/Mise+en+avant+-+Call-out",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2099,7 +2382,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/callout/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/callout/example/index.ejs",
+                            "dest": "example/component/callout/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2116,7 +2404,6 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "button",
                             "callout"
                         ],
@@ -2148,6 +2435,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019199/Mise+en+exergue+-+Highlight",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2156,7 +2444,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/highlight/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/highlight/example/index.ejs",
+                            "dest": "example/component/highlight/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2187,7 +2480,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -2207,6 +2500,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/476610770/Modale+-+Modal",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2218,7 +2512,12 @@
                             "input"
                         ],
                         "script": [],
-                        "file": "example/component/modal/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/modal/example/index.ejs",
+                            "dest": "example/component/modal/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2261,7 +2560,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -2280,6 +2579,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222789853/Navigation+principale+-+Main+navigation",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2288,7 +2588,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/navigation/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/navigation/example/index.ejs",
+                            "dest": "example/component/navigation/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2331,7 +2636,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 2,
+                        "level": 1,
                         "files": [
                             "main",
                             "legacy"
@@ -2351,6 +2656,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/367985267/Onglets+-+Tabs",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2359,12 +2665,16 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/tab/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/tab/example/index.ejs",
+                            "dest": "example/component/tab/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
-                            "core",
-                            "link"
+                            "core"
                         ],
                         "script": [
                             "core"
@@ -2378,7 +2688,6 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "tab"
                         ],
                         "script": [
@@ -2388,8 +2697,7 @@
                         ]
                     },
                     "combination": [
-                        "core",
-                        "link"
+                        "core"
                     ]
                 },
                 {
@@ -2399,7 +2707,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 2,
+                        "level": 1,
                         "files": [
                             "main",
                             "legacy"
@@ -2413,6 +2721,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223051980/Pagination+-+Pagination",
                     "wrapper": "container",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2421,12 +2730,16 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/pagination/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/pagination/example/index.ejs",
+                            "dest": "example/component/pagination/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
-                            "core",
-                            "link"
+                            "core"
                         ],
                         "script": []
                     },
@@ -2438,14 +2751,12 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "pagination"
                         ],
                         "script": []
                     },
                     "combination": [
-                        "core",
-                        "link"
+                        "core"
                     ]
                 },
                 {
@@ -2466,6 +2777,7 @@
                     "description": "Le pattern paramètre d'affichage permet de définir ses préférences de thème",
                     "draft": false,
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2479,7 +2791,12 @@
                         "script": [
                             "header"
                         ],
-                        "file": "example/component/display/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/display/example/index.ejs",
+                            "dest": "example/component/display/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2504,8 +2821,8 @@
                             "core",
                             "form",
                             "link",
-                            "radio",
                             "button",
+                            "radio",
                             "modal"
                         ],
                         "script": [
@@ -2531,7 +2848,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 3,
+                        "level": 2,
                         "files": [
                             "main",
                             "legacy"
@@ -2545,6 +2862,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/771555355/",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2553,7 +2871,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/share/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/share/example/index.ejs",
+                            "dest": "example/component/share/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2571,8 +2894,8 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "button",
+                            "link",
                             "share"
                         ],
                         "script": []
@@ -2603,6 +2926,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331413/Pied+de+page+-+Footer",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2611,7 +2935,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/footer/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/footer/example/index.ejs",
+                            "dest": "example/component/footer/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2642,6 +2971,79 @@
                     ]
                 },
                 {
+                    "path": "src/component/translate",
+                    "ascendants": [
+                        "dsfr",
+                        "component"
+                    ],
+                    "style": {
+                        "level": 3,
+                        "files": [
+                            "main",
+                            "legacy"
+                        ]
+                    },
+                    "type": "package",
+                    "id": "translate",
+                    "title": "Sélecteur de langue",
+                    "description": "Le sélecteur de langue permet à l’utilisateur de choisir la langue dans laquelle est affichée le contenu du site, si celui-ci est disponible en plusieurs langues.",
+                    "draft": false,
+                    "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/1034158081",
+                    "wrapper": "col-8",
+                    "prepend": false,
+                    "noHeading": false,
+                    "module": true,
+                    "nomodule": true,
+                    "detached": false,
+                    "filename": "translate",
+                    "inject": false,
+                    "example": {
+                        "style": [],
+                        "script": [],
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/translate/example/index.ejs",
+                            "dest": "example/component/translate/index.html",
+                            "subdir": []
+                        }
+                    },
+                    "dependencies": {
+                        "style": [
+                            "core",
+                            "button",
+                            "navigation"
+                        ],
+                        "script": [
+                            "core",
+                            "navigation"
+                        ]
+                    },
+                    "replace": {
+                        "style": [],
+                        "script": []
+                    },
+                    "dist": "dist/component/translate",
+                    "usage": {
+                        "style": [
+                            "core",
+                            "button",
+                            "link",
+                            "navigation",
+                            "translate"
+                        ],
+                        "script": [
+                            "legacy",
+                            "core",
+                            "navigation"
+                        ]
+                    },
+                    "combination": [
+                        "core",
+                        "button",
+                        "navigation"
+                    ]
+                },
+                {
                     "path": "src/component/summary",
                     "ascendants": [
                         "dsfr",
@@ -2662,6 +3064,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/262898307/Sommaire+-+Summary",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2670,7 +3073,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/summary/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/summary/example/index.ejs",
+                            "dest": "example/component/summary/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2721,6 +3129,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/312016971/Tableau+-+Table",
                     "wrapper": "container",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2729,7 +3138,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/table/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/table/example/index.ejs",
+                            "dest": "example/component/table/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2766,7 +3180,7 @@
                         "component"
                     ],
                     "style": {
-                        "level": 2,
+                        "level": 1,
                         "files": [
                             "main",
                             "legacy"
@@ -2786,6 +3200,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/310706305/Tag",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2794,12 +3209,16 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/tag/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/tag/example/index.ejs",
+                            "dest": "example/component/tag/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
-                            "core",
-                            "link"
+                            "core"
                         ],
                         "script": [
                             "core"
@@ -2813,7 +3232,6 @@
                     "usage": {
                         "style": [
                             "core",
-                            "link",
                             "tag"
                         ],
                         "script": [
@@ -2823,8 +3241,7 @@
                         ]
                     },
                     "combination": [
-                        "core",
-                        "link"
+                        "core"
                     ]
                 },
                 {
@@ -2853,6 +3270,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/980025345",
                     "wrapper": "container",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2861,7 +3279,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/download/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/download/example/index.ejs",
+                            "dest": "example/component/download/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2912,6 +3335,7 @@
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331438/Tuile+-+Tile",
                     "wrapper": "col-8",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -2920,7 +3344,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/component/tile/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/component/tile/example/index.ejs",
+                            "dest": "example/component/tile/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -2971,9 +3400,10 @@
             "id": "pattern",
             "title": "Modèle",
             "description": "",
-            "draft": true,
+            "draft": false,
             "doc": null,
             "prepend": false,
+            "noHeading": false,
             "module": true,
             "nomodule": true,
             "detached": false,
@@ -2982,7 +3412,12 @@
             "example": {
                 "style": [],
                 "script": [],
-                "file": "example/pattern/index.html"
+                "root": {
+                    "hasData": true,
+                    "src": "src/pattern/example/index.ejs",
+                    "dest": "example/pattern/index.html",
+                    "subdir": []
+                }
             },
             "dependencies": {
                 "style": [],
@@ -3009,9 +3444,10 @@
             "id": "page",
             "title": "Modèle de page",
             "description": "",
-            "draft": true,
+            "draft": false,
             "doc": null,
             "prepend": false,
+            "noHeading": false,
             "module": true,
             "nomodule": true,
             "detached": false,
@@ -3020,23 +3456,260 @@
             "example": {
                 "style": [],
                 "script": [],
-                "file": "example/page/index.html"
+                "root": {
+                    "hasData": true,
+                    "src": "src/page/example/index.ejs",
+                    "dest": "example/page/index.html",
+                    "subdir": []
+                }
             },
             "dependencies": {
-                "style": [],
-                "script": []
+                "style": [
+                    "core",
+                    "button"
+                ],
+                "script": [
+                    "core"
+                ]
             },
             "replace": {
                 "style": [],
                 "script": []
             },
             "dist": "dist/page",
-            "children": [],
+            "children": [
+                {
+                    "path": "src/page/response",
+                    "ascendants": [
+                        "dsfr",
+                        "page"
+                    ],
+                    "type": "folder",
+                    "id": "response",
+                    "title": "Codes de Statut HTML",
+                    "description": "Modèles de pages correspondant aux réponses de statut HTML",
+                    "draft": false,
+                    "doc": null,
+                    "prepend": false,
+                    "noHeading": false,
+                    "module": true,
+                    "nomodule": true,
+                    "detached": false,
+                    "filename": "response",
+                    "inject": false,
+                    "example": {
+                        "style": [],
+                        "script": [],
+                        "root": {
+                            "hasData": true,
+                            "src": "src/page/response/example/index.ejs",
+                            "dest": "example/page/response/index.html",
+                            "subdir": []
+                        }
+                    },
+                    "dependencies": {
+                        "style": [
+                            "core",
+                            "button"
+                        ],
+                        "script": [
+                            "core"
+                        ]
+                    },
+                    "replace": {
+                        "style": [],
+                        "script": []
+                    },
+                    "dist": "dist/page/response",
+                    "children": [
+                        {
+                            "path": "src/page/response/not-found",
+                            "ascendants": [
+                                "dsfr",
+                                "page",
+                                "response"
+                            ],
+                            "type": "package",
+                            "id": "not-found",
+                            "title": "Modèle de page ressource non trouvée",
+                            "description": "",
+                            "draft": false,
+                            "doc": null,
+                            "prepend": false,
+                            "noHeading": true,
+                            "module": true,
+                            "nomodule": true,
+                            "detached": false,
+                            "filename": "not-found",
+                            "inject": false,
+                            "example": {
+                                "style": [
+                                    "header",
+                                    "footer"
+                                ],
+                                "script": [
+                                    "header"
+                                ],
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/page/response/not-found/example/index.ejs",
+                                    "dest": "example/page/response/not-found/index.html",
+                                    "subdir": [
+                                        "complete",
+                                        "contact",
+                                        "default",
+                                        "search"
+                                    ],
+                                    "children": [
+                                        {
+                                            "hasData": true,
+                                            "src": "src/page/response/not-found/example/complete/index.ejs",
+                                            "dest": "example/page/response/not-found/complete/index.html",
+                                            "subdir": []
+                                        },
+                                        {
+                                            "hasData": true,
+                                            "src": "src/page/response/not-found/example/contact/index.ejs",
+                                            "dest": "example/page/response/not-found/contact/index.html",
+                                            "subdir": []
+                                        },
+                                        {
+                                            "hasData": true,
+                                            "src": "src/page/response/not-found/example/default/index.ejs",
+                                            "dest": "example/page/response/not-found/default/index.html",
+                                            "subdir": []
+                                        },
+                                        {
+                                            "hasData": true,
+                                            "src": "src/page/response/not-found/example/search/index.ejs",
+                                            "dest": "example/page/response/not-found/search/index.html",
+                                            "subdir": []
+                                        }
+                                    ]
+                                }
+                            },
+                            "dependencies": {
+                                "style": [
+                                    "core",
+                                    "button"
+                                ],
+                                "script": [
+                                    "core"
+                                ]
+                            },
+                            "replace": {
+                                "style": [],
+                                "script": []
+                            },
+                            "dist": "dist/page/response/not-found",
+                            "usage": {
+                                "style": [
+                                    "core",
+                                    "button"
+                                ],
+                                "script": [
+                                    "legacy",
+                                    "core"
+                                ]
+                            },
+                            "combination": [
+                                "core",
+                                "button"
+                            ]
+                        },
+                        {
+                            "path": "src/page/response/unavailable",
+                            "ascendants": [
+                                "dsfr",
+                                "page",
+                                "response"
+                            ],
+                            "standalone": {
+                                "style": {
+                                    "files": [
+                                        "main"
+                                    ]
+                                },
+                                "dist": "standalone/page/response/unavailable",
+                                "example": {
+                                    "style": [],
+                                    "script": [],
+                                    "root": {
+                                        "hasData": true,
+                                        "src": "src/page/response/unavailable/standalone/example/index.ejs",
+                                        "dest": "standalone/page/response/unavailable/index.html",
+                                        "subdir": []
+                                    }
+                                }
+                            },
+                            "type": "package",
+                            "id": "unavailable",
+                            "title": "Modèle de page service indisponible",
+                            "description": "",
+                            "draft": false,
+                            "prepend": false,
+                            "noHeading": false,
+                            "module": true,
+                            "nomodule": true,
+                            "detached": false,
+                            "filename": "unavailable",
+                            "inject": true,
+                            "example": {
+                                "style": [],
+                                "script": [],
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/page/response/unavailable/example/index.ejs",
+                                    "dest": "example/page/response/unavailable/index.html",
+                                    "subdir": []
+                                }
+                            },
+                            "dependencies": {
+                                "style": [],
+                                "script": []
+                            },
+                            "replace": {
+                                "style": [],
+                                "script": []
+                            },
+                            "dist": "dist/page/response/unavailable",
+                            "usage": {
+                                "style": [],
+                                "script": []
+                            },
+                            "combination": []
+                        }
+                    ],
+                    "usage": {
+                        "style": [
+                            "core",
+                            "button"
+                        ],
+                        "script": [
+                            "legacy",
+                            "core"
+                        ]
+                    },
+                    "combination": [
+                        "core",
+                        "button"
+                    ]
+                }
+            ],
             "usage": {
-                "style": [],
-                "script": []
+                "style": [
+                    "core",
+                    "button"
+                ],
+                "script": [
+                    "legacy",
+                    "core"
+                ]
             },
-            "combination": []
+            "combination": [
+                "core",
+                "button"
+            ]
         },
         {
             "path": "src/utility",
@@ -3062,6 +3735,7 @@
                 }
             ],
             "prepend": false,
+            "noHeading": false,
             "module": true,
             "nomodule": true,
             "detached": true,
@@ -3070,7 +3744,12 @@
             "example": {
                 "style": [],
                 "script": [],
-                "file": "example/utility/index.html"
+                "root": {
+                    "hasData": true,
+                    "src": "src/utility/example/index.ejs",
+                    "dest": "example/utility/index.html",
+                    "subdir": []
+                }
             },
             "dependencies": {
                 "style": [
@@ -3097,12 +3776,66 @@
                     "icons-system",
                     "icons-user",
                     "icons-weather",
+                    "colors",
                     "icons"
                 ],
                 "script": []
             },
             "dist": "dist/utility",
             "children": [
+                {
+                    "path": "src/utility/colors",
+                    "ascendants": [
+                        "dsfr",
+                        "utility"
+                    ],
+                    "style": {
+                        "level": 1,
+                        "files": [
+                            "main",
+                            "legacy"
+                        ]
+                    },
+                    "type": "package",
+                    "id": "colors",
+                    "title": "Utilitaires de couleur",
+                    "description": "",
+                    "draft": false,
+                    "doc": null,
+                    "wrapper": "col-8",
+                    "prepend": false,
+                    "noHeading": false,
+                    "module": true,
+                    "nomodule": true,
+                    "detached": false,
+                    "filename": "colors",
+                    "inject": false,
+                    "example": {
+                        "style": [],
+                        "script": []
+                    },
+                    "dependencies": {
+                        "style": [
+                            "core"
+                        ],
+                        "script": []
+                    },
+                    "replace": {
+                        "style": [],
+                        "script": []
+                    },
+                    "dist": "dist/utility/colors",
+                    "usage": {
+                        "style": [
+                            "core",
+                            "colors"
+                        ],
+                        "script": []
+                    },
+                    "combination": [
+                        "core"
+                    ]
+                },
                 {
                     "path": "src/utility/icons",
                     "ascendants": [
@@ -3123,6 +3856,7 @@
                     "draft": false,
                     "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons",
                     "prepend": false,
+                    "noHeading": false,
                     "module": true,
                     "nomodule": true,
                     "detached": false,
@@ -3131,7 +3865,12 @@
                     "example": {
                         "style": [],
                         "script": [],
-                        "file": "example/utility/icons/index.html"
+                        "root": {
+                            "hasData": true,
+                            "src": "src/utility/icons/example/index.ejs",
+                            "dest": "example/utility/icons/index.html",
+                            "subdir": []
+                        }
                     },
                     "dependencies": {
                         "style": [
@@ -3185,6 +3924,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Building",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3193,7 +3933,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-buildings/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-buildings/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-buildings/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3239,6 +3984,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Business",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3247,7 +3993,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-business/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-business/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-business/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3293,6 +4044,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Communication",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3301,7 +4053,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-communication/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-communication/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-communication/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3347,6 +4104,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Design",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3355,7 +4113,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-design/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-design/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-design/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3401,6 +4164,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Development",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3409,7 +4173,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-development/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-development/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-development/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3455,6 +4224,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Device",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3463,7 +4233,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-device/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-device/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-device/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3509,6 +4284,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Document",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3517,7 +4293,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-document/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-document/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-document/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3563,6 +4344,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Editor",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3571,7 +4353,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-editor/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-editor/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-editor/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3617,6 +4404,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Finance",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3625,7 +4413,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-finance/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-finance/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-finance/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3671,6 +4464,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Health",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3679,7 +4473,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-health/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-health/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-health/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3725,6 +4524,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Logo",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3733,7 +4533,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-logo/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-logo/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-logo/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3779,6 +4584,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Map",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3787,7 +4593,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-map/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-map/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-map/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3833,6 +4644,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Media",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3841,7 +4653,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-media/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-media/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-media/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3887,6 +4704,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Other",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3895,7 +4713,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-others/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-others/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-others/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3941,6 +4764,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#System",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -3949,7 +4773,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-system/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-system/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-system/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -3995,6 +4824,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#User",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -4003,7 +4833,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-user/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-user/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-user/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [
@@ -4049,6 +4884,7 @@
                             "doc": "https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Weather",
                             "wrapper": "col-8",
                             "prepend": false,
+                            "noHeading": false,
                             "module": true,
                             "nomodule": true,
                             "detached": false,
@@ -4057,7 +4893,12 @@
                             "example": {
                                 "style": [],
                                 "script": [],
-                                "file": "example/utility/icons/icons-weather/index.html"
+                                "root": {
+                                    "hasData": true,
+                                    "src": "src/utility/icons/icons-weather/example/index.ejs",
+                                    "dest": "example/utility/icons/icons-weather/index.html",
+                                    "subdir": []
+                                }
                             },
                             "dependencies": {
                                 "style": [

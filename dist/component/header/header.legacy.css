@@ -1,6 +1,34 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
+.fr-header__menu-links .fr-btn {
+  box-shadow: none;
+}
+
+.fr-header__menu-links ul > li:last-child .fr-btn {
+  box-shadow: none;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+  .fr-header__brand {
+    z-index: auto;
+    filter: none;
+    background: transparent;
+  }
+
+  .fr-header__service {
+    box-shadow: none;
+  }
+}
+@media (min-width: 78em) {
+  /*! media xl */
+}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .fr-header ul {
     list-style-type: none;
@@ -45,18 +73,22 @@
     color: #000091;
   }
 
-  .fr-header {
+  .fr-header__brand {
     background-color: #fff;
   }
 
   .fr-header__service {
-    box-shadow: inset 0 1px 0 0 #e5e5e5;
+    box-shadow: inset 0 1px 0 0 #ddd;
+  }
+
+  .fr-header__menu-links::after {
+    box-shadow: inset 0 1px 0 0 #ddd;
   }
 
   .fr-header__menu-links .fr-btn {
     background-color: transparent;
     color: #000091;
-    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+    box-shadow: inset 0 -1px 0 0 #ddd;
   }
 
   .fr-header__menu-links .fr-btn:hover {
@@ -113,7 +145,7 @@
   }
 
   .fr-header__tools-links .fr-btn::after {
-    box-shadow: inset 0 0 0 1px #e5e5e5;
+    box-shadow: inset 0 0 0 1px #ddd;
   }
 
   .fr-header__navbar .fr-service__title {
@@ -160,7 +192,7 @@
   .fr-header__menu-links .fr-link {
     background-color: transparent;
     color: #000091;
-    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+    box-shadow: inset 0 -1px 0 0 #ddd;
   }
 
   .fr-header__menu-links .fr-link:hover {
@@ -212,21 +244,16 @@
   }
 }
 @media (min-width: 62em) and (-ms-high-contrast: none), (min-width: 62em) and (-ms-high-contrast: active) {
-  .fr-header__tools-links {
-    display: block;
-  }
-
   .fr-header .fr-modal {
     position: static;
     overflow: visible;
   }
 
-  .fr-header .fr-header__menu {
-    box-shadow: inset 0 1px 0 0 #e5e5e5;
+  .fr-header {
+    background-color: #fff;
   }
-}
-@media (min-width: 62em) {
-  .fr-header__service {
-    box-shadow: none;
+
+  .fr-header .fr-header__menu {
+    box-shadow: inset 0 1px 0 0 #ddd;
   }
 }

@@ -17,19 +17,19 @@
     <link href="../../../dist/component/connect/connect.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/scheme/scheme.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/link/link.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/accordion/accordion.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/button/button.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/modal/modal.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/utility/utility.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/core/core.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/connect/connect.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/link/link.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/form/form.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/accordion/accordion.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/form/form.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/button/button.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/modal/modal.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/utility/utility.legacy.css" rel="stylesheet" file="legacy">
     <style>
@@ -126,9 +126,9 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-314">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-303">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-314">
+                            <div class="fr-collapse" id="snippet-303">
                                 <pre class=" language-html"><code>&lt;div class="fr-connect-group"&gt;
     &lt;button class="fr-connect"&gt;
         &lt;span class="fr-connect__login"&gt;S’identifier avec&lt;/span&gt;
@@ -157,9 +157,9 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-315">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-304">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-315">
+                            <div class="fr-collapse" id="snippet-304">
                                 <pre class=" language-html"><code>&lt;div class="fr-connect-group"&gt;
     &lt;button class="fr-connect fr-connect--plus"&gt;
         &lt;span class="fr-connect__login"&gt;S’identifier avec&lt;/span&gt;
@@ -177,7 +177,7 @@
             </div>
         </div>
     </div>
-    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false">
+    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false" style="z-index: 1600">
         Label bouton
     </button>
     <dialog id="fr-theme-modal" class="fr-modal" role="dialog" aria-labelledby="fr-theme-modal-title">
@@ -207,7 +207,7 @@
                                                     Thème clair
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/light.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/light.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/light.svg#artwork-major"></use>
@@ -220,7 +220,7 @@
                                                     Thème sombre
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/dark.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/dark.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/dark.svg#artwork-major"></use>
@@ -234,7 +234,7 @@
                                                     <span class="fr-hint-text">Utilise les paramètres système.</span>
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/system.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/system.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/system.svg#artwork-major"></use>

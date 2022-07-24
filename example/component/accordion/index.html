@@ -14,22 +14,22 @@
     <!-- Modifier les chemins relatifs des favicons en fonction de la structure du projet -->
     <!-- Dans le fichier manifest.webmanifest aussi, modifier les chemins vers les images -->
     <link href="../../../dist/core/core.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/link/link.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/scheme/scheme.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/accordion/accordion.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/scheme/scheme.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/link/link.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/button/button.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/tab/tab.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/modal/modal.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/utility/utility.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/core/core.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/accordion/accordion.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/link/link.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/form/form.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/accordion/accordion.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/button/button.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/tab/tab.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/modal/modal.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/utility/utility.legacy.css" rel="stylesheet" file="legacy">
     <style>
@@ -112,20 +112,20 @@
                     <div class="fr-mb-6v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-80">Intitulé accordéon</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-69">Intitulé accordéon</button>
                             </h3>
-                            <div class="fr-collapse" id="accordion-80">
+                            <div class="fr-collapse" id="accordion-69">
                                 <!-- données de test -->
                                 <div>
                                     <h4 class="fr-h4">Contenu </h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
                                     <ul>
+                                        <li>list item</li>
                                         <li>list item<ul>
                                                 <li>list item niveau 2</li>
                                                 <li>list item niveau 2</li>
                                             </ul>
                                         </li>
-                                        <li>list item</li>
                                     </ul>
                                 </div>
                             </div>
@@ -134,14 +134,14 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-82">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-71">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-82">
+                            <div class="fr-collapse" id="snippet-71">
                                 <pre class=" language-html"><code>&lt;section class="fr-accordion"&gt;
     &lt;h3 class="fr-accordion__title"&gt;
-        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-81"&gt;Intitulé accordéon&lt;/button&gt;
+        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-70"&gt;Intitulé accordéon&lt;/button&gt;
     &lt;/h3&gt;
-    &lt;div class="fr-collapse" id="accordion-81"&gt;
+    &lt;div class="fr-collapse" id="accordion-70"&gt;
         &lt;!-- données de test --&gt;
     &lt;/div&gt;
 &lt;/section&gt;
@@ -154,80 +154,9 @@
                         <div class="fr-accordions-group">
                             <section class="fr-accordion">
                                 <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-83">Intitulé accordéon</button>
+                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-72">Intitulé accordéon</button>
                                 </h3>
-                                <div class="fr-collapse" id="accordion-83">
-                                    <!-- données de test -->
-                                    <div>
-                                        <h4 class="fr-h4">Contenu </h4>
-                                        <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                        <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                        <ul>
-                                            <li>list item<ul>
-                                                    <li>list item niveau 2</li>
-                                                    <li>list item niveau 2</li>
-                                                    <li>list item niveau 2</li>
-                                                </ul>
-                                            </li>
-                                            <li>list item</li>
-                                            <li>list item<ul>
-                                                    <li>list item niveau 2</li>
-                                                    <li>list item niveau 2</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-84">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-84">
-                                    <!-- données de test -->
-                                    <div>
-                                        <h4 class="fr-h4">Contenu </h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                        <ul>
-                                            <li>list item<ul>
-                                                    <li>list item niveau 2</li>
-                                                    <li>list item niveau 2</li>
-                                                    <li>list item niveau 2</li>
-                                                </ul>
-                                            </li>
-                                            <li>list item</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-85">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-85">
-                                    <!-- données de test -->
-                                    <div>
-                                        <h4 class="fr-h4">Contenu </h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                        <ul>
-                                            <li>list item<ul>
-                                                    <li>list item niveau 2</li>
-                                                    <li>list item niveau 2</li>
-                                                    <li>list item niveau 2</li>
-                                                </ul>
-                                            </li>
-                                            <li>list item</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-86">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-86">
+                                <div class="fr-collapse" id="accordion-72">
                                     <!-- données de test -->
                                     <div>
                                         <h4 class="fr-h4">Contenu </h4>
@@ -237,11 +166,6 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
                                         <ul>
                                             <li>list item</li>
-                                            <li>list item<ul>
-                                                    <li>list item niveau 2</li>
-                                                    <li>list item niveau 2</li>
-                                                </ul>
-                                            </li>
                                             <li>list item</li>
                                         </ul>
                                     </div>
@@ -249,9 +173,52 @@
                             </section>
                             <section class="fr-accordion">
                                 <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-87">Intitulé accordéon</button>
+                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-73">Intitulé accordéon</button>
                                 </h3>
-                                <div class="fr-collapse" id="accordion-87">
+                                <div class="fr-collapse" id="accordion-73">
+                                    <!-- données de test -->
+                                    <div>
+                                        <h4 class="fr-h4">Contenu </h4>
+                                        <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
+                                        <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                        <ul>
+                                            <li>list item</li>
+                                            <li>list item</li>
+                                            <li>list item<ul>
+                                                    <li>list item niveau 2</li>
+                                                    <li>list item niveau 2</li>
+                                                    <li>list item niveau 2</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="fr-accordion">
+                                <h3 class="fr-accordion__title">
+                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-74">Intitulé accordéon</button>
+                                </h3>
+                                <div class="fr-collapse" id="accordion-74">
+                                    <!-- données de test -->
+                                    <div>
+                                        <h4 class="fr-h4">Contenu </h4>
+                                        <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
+                                        <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                        <ul>
+                                            <li>list item</li>
+                                            <li>list item</li>
+                                            <li>list item</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="fr-accordion">
+                                <h3 class="fr-accordion__title">
+                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-75">Intitulé accordéon</button>
+                                </h3>
+                                <div class="fr-collapse" id="accordion-75">
                                     <!-- données de test -->
                                     <div>
                                         <h4 class="fr-h4">Contenu </h4>
@@ -274,18 +241,50 @@
                             </section>
                             <section class="fr-accordion">
                                 <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-88">Intitulé accordéon</button>
+                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-76">Intitulé accordéon</button>
                                 </h3>
-                                <div class="fr-collapse" id="accordion-88">
+                                <div class="fr-collapse" id="accordion-76">
+                                    <!-- données de test -->
+                                    <div>
+                                        <h4 class="fr-h4">Contenu </h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                        <ul>
+                                            <li>list item<ul>
+                                                    <li>list item niveau 2</li>
+                                                    <li>list item niveau 2</li>
+                                                    <li>list item niveau 2</li>
+                                                </ul>
+                                            </li>
+                                            <li>list item</li>
+                                            <li>list item<ul>
+                                                    <li>list item niveau 2</li>
+                                                    <li>list item niveau 2</li>
+                                                    <li>list item niveau 2</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="fr-accordion">
+                                <h3 class="fr-accordion__title">
+                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-77">Intitulé accordéon</button>
+                                </h3>
+                                <div class="fr-collapse" id="accordion-77">
                                     <!-- données de test -->
                                     <div>
                                         <h4 class="fr-h4">Contenu </h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
                                         <ul>
                                             <li>list item</li>
-                                            <li>list item</li>
                                             <li>list item<ul>
                                                     <li>list item niveau 2</li>
+                                                    <li>list item niveau 2</li>
+                                                    <li>list item niveau 2</li>
+                                                </ul>
+                                            </li>
+                                            <li>list item<ul>
                                                     <li>list item niveau 2</li>
                                                     <li>list item niveau 2</li>
                                                 </ul>
@@ -299,1382 +298,59 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-95">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-84">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-95">
+                            <div class="fr-collapse" id="snippet-84">
                                 <pre class=" language-html"><code>&lt;div class="fr-accordions-group"&gt;
     &lt;section class="fr-accordion"&gt;
         &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-89"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-78"&gt;Intitulé accordéon&lt;/button&gt;
         &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-89"&gt;
+        &lt;div class="fr-collapse" id="accordion-78"&gt;
             &lt;!-- données de test --&gt;
         &lt;/div&gt;
     &lt;/section&gt;
     &lt;section class="fr-accordion"&gt;
         &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-90"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-79"&gt;Intitulé accordéon&lt;/button&gt;
         &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-90"&gt;
+        &lt;div class="fr-collapse" id="accordion-79"&gt;
             &lt;!-- données de test --&gt;
         &lt;/div&gt;
     &lt;/section&gt;
     &lt;section class="fr-accordion"&gt;
         &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-91"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-80"&gt;Intitulé accordéon&lt;/button&gt;
         &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-91"&gt;
+        &lt;div class="fr-collapse" id="accordion-80"&gt;
             &lt;!-- données de test --&gt;
         &lt;/div&gt;
     &lt;/section&gt;
     &lt;section class="fr-accordion"&gt;
         &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-92"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-81"&gt;Intitulé accordéon&lt;/button&gt;
         &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-92"&gt;
+        &lt;div class="fr-collapse" id="accordion-81"&gt;
             &lt;!-- données de test --&gt;
         &lt;/div&gt;
     &lt;/section&gt;
     &lt;section class="fr-accordion"&gt;
         &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-93"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-82"&gt;Intitulé accordéon&lt;/button&gt;
         &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-93"&gt;
+        &lt;div class="fr-collapse" id="accordion-82"&gt;
             &lt;!-- données de test --&gt;
         &lt;/div&gt;
     &lt;/section&gt;
     &lt;section class="fr-accordion"&gt;
         &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-94"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-83"&gt;Intitulé accordéon&lt;/button&gt;
         &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-94"&gt;
+        &lt;div class="fr-collapse" id="accordion-83"&gt;
             &lt;!-- données de test --&gt;
         &lt;/div&gt;
     &lt;/section&gt;
 &lt;/div&gt;
-</code></pre>
-                            </div>
-                        </section>
-                    </div>
-                    <h4>Accordéon dans un accordéon</h4>
-                    <div class="fr-mb-6v">
-                        <section class="fr-accordion">
-                            <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-96">Intitulé accordéon</button>
-                            </h3>
-                            <div class="fr-collapse" id="accordion-96">
-                                <section class="fr-accordion">
-                                    <h3 class="fr-accordion__title">
-                                        <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-97">Intitulé accordéon</button>
-                                    </h3>
-                                    <div class="fr-collapse" id="accordion-97">
-                                        <!-- données de test -->
-                                        <div>
-                                            <h4 class="fr-h4">Contenu </h4>
-                                            <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                            <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                            <ul>
-                                                <li>list item<ul>
-                                                        <li>list item niveau 2</li>
-                                                        <li>list item niveau 2</li>
-                                                        <li>list item niveau 2</li>
-                                                    </ul>
-                                                </li>
-                                                <li>list item</li>
-                                                <li>list item</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="fr-mb-12v">
-                        <section class="fr-accordion">
-                            <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-100">Extrait de code</button>
-                            </h3>
-                            <div class="fr-collapse" id="snippet-100">
-                                <pre class=" language-html"><code>&lt;section class="fr-accordion"&gt;
-    &lt;h3 class="fr-accordion__title"&gt;
-        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-98"&gt;Intitulé accordéon&lt;/button&gt;
-    &lt;/h3&gt;
-    &lt;div class="fr-collapse" id="accordion-98"&gt;
-        &lt;section class="fr-accordion"&gt;
-            &lt;h3 class="fr-accordion__title"&gt;
-                &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-99"&gt;Intitulé accordéon&lt;/button&gt;
-            &lt;/h3&gt;
-            &lt;div class="fr-collapse" id="accordion-99"&gt;
-                &lt;!-- données de test --&gt;
-            &lt;/div&gt;
-        &lt;/section&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
-                            </div>
-                        </section>
-                    </div>
-                    <h4>Groupes d‘accordéons dans des groupes d‘accordéons</h4>
-                    <div class="fr-mb-6v">
-                        <div class="fr-accordions-group">
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-107">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-107">
-                                    <div class="fr-accordions-group">
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-101">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-101">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-102">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-102">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-103">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-103">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-104">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-104">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-105">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-105">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-106">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-106">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-114">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-114">
-                                    <div class="fr-accordions-group">
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-108">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-108">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-109">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-109">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-110">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-110">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-111">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-111">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-112">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-112">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-113">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-113">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-121">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-121">
-                                    <div class="fr-accordions-group">
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-115">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-115">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-116">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-116">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-117">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-117">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-118">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-118">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-119">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-119">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-120">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-120">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-128">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-128">
-                                    <div class="fr-accordions-group">
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-122">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-122">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-123">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-123">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-124">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-124">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-125">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-125">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-126">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-126">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-127">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-127">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-135">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-135">
-                                    <div class="fr-accordions-group">
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-129">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-129">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-130">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-130">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-131">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-131">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-132">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-132">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-133">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-133">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-134">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-134">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="fr-accordion">
-                                <h3 class="fr-accordion__title">
-                                    <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-142">Intitulé accordéon</button>
-                                </h3>
-                                <div class="fr-collapse" id="accordion-142">
-                                    <div class="fr-accordions-group">
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-136">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-136">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                                    <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-137">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-137">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-138">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-138">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-139">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-139">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-140">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-140">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section class="fr-accordion">
-                                            <h3 class="fr-accordion__title">
-                                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-141">Intitulé accordéon</button>
-                                            </h3>
-                                            <div class="fr-collapse" id="accordion-141">
-                                                <!-- données de test -->
-                                                <div>
-                                                    <h4 class="fr-h4">Contenu </h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                                    <ul>
-                                                        <li>list item</li>
-                                                        <li>list item<ul>
-                                                                <li>list item niveau 2</li>
-                                                                <li>list item niveau 2</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="fr-mb-12v">
-                        <section class="fr-accordion">
-                            <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-185">Extrait de code</button>
-                            </h3>
-                            <div class="fr-collapse" id="snippet-185">
-                                <pre class=" language-html"><code>&lt;div class="fr-accordions-group"&gt;
-    &lt;section class="fr-accordion"&gt;
-        &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-149"&gt;Intitulé accordéon&lt;/button&gt;
-        &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-149"&gt;
-            &lt;div class="fr-accordions-group"&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-143"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-143"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-144"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-144"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-145"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-145"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-146"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-146"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-147"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-147"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-148"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-148"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section class="fr-accordion"&gt;
-        &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-156"&gt;Intitulé accordéon&lt;/button&gt;
-        &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-156"&gt;
-            &lt;div class="fr-accordions-group"&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-150"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-150"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-151"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-151"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-152"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-152"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-153"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-153"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-154"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-154"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-155"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-155"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section class="fr-accordion"&gt;
-        &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-163"&gt;Intitulé accordéon&lt;/button&gt;
-        &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-163"&gt;
-            &lt;div class="fr-accordions-group"&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-157"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-157"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-158"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-158"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-159"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-159"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-160"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-160"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-161"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-161"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-162"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-162"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section class="fr-accordion"&gt;
-        &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-170"&gt;Intitulé accordéon&lt;/button&gt;
-        &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-170"&gt;
-            &lt;div class="fr-accordions-group"&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-164"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-164"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-165"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-165"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-166"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-166"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-167"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-167"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-168"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-168"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-169"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-169"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section class="fr-accordion"&gt;
-        &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-177"&gt;Intitulé accordéon&lt;/button&gt;
-        &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-177"&gt;
-            &lt;div class="fr-accordions-group"&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-171"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-171"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-172"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-172"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-173"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-173"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-174"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-174"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-175"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-175"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-176"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-176"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section class="fr-accordion"&gt;
-        &lt;h3 class="fr-accordion__title"&gt;
-            &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-184"&gt;Intitulé accordéon&lt;/button&gt;
-        &lt;/h3&gt;
-        &lt;div class="fr-collapse" id="accordion-184"&gt;
-            &lt;div class="fr-accordions-group"&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-178"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-178"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-179"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-179"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-180"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-180"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-181"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-181"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-182"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-182"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section class="fr-accordion"&gt;
-                    &lt;h3 class="fr-accordion__title"&gt;
-                        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-183"&gt;Intitulé accordéon&lt;/button&gt;
-                    &lt;/h3&gt;
-                    &lt;div class="fr-collapse" id="accordion-183"&gt;
-                        &lt;!-- données de test --&gt;
-                    &lt;/div&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-</code></pre>
-                            </div>
-                        </section>
-                    </div>
-                    <h4>Système d’onglets dans un accordéon</h4>
-                    <div class="fr-mb-6v">
-                        <section class="fr-accordion">
-                            <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-186">Intitulé accordéon</button>
-                            </h3>
-                            <div class="fr-collapse" id="accordion-186">
-                                <div class="fr-tabs">
-                                    <ul class="fr-tabs__list" role="tablist" aria-label="[A modifier | nom du système d'onglet]">
-                                        <li role="presentation">
-                                            <button id="tabpanel-187" class="fr-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-187-panel">Label Tab 1</button>
-                                        </li>
-                                        <li role="presentation">
-                                            <button id="tabpanel-188" class="fr-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-188-panel">Label Tab 2</button>
-                                        </li>
-                                    </ul>
-                                    <div id="tabpanel-187-panel" class="fr-tabs__panel fr-tabs__panel--selected" role="tabpanel" aria-labelledby="tabpanel-187" tabindex="0">
-                                        <!-- données de test -->
-                                        <div>
-                                            <h4 class="fr-h4">Contenu 1</h4>
-                                            <img class="fr-responsive-img" src="../../../example/img/placeholder.16x9.png" alt="" />
-                                            <!-- L’alternative de l’image (attribut alt) doit toujours être présente, sa valeur peut-être vide (image n’apportant pas de sens supplémentaire au contexte) ou non (porteuse de texte ou apportant du sens) selon votre contexte -->
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                            <ul>
-                                                <li>list item</li>
-                                                <li>list item</li>
-                                                <li>list item</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div id="tabpanel-188-panel" class="fr-tabs__panel" role="tabpanel" aria-labelledby="tabpanel-188" tabindex="0">
-                                        <!-- données de test -->
-                                        <div>
-                                            <h4 class="fr-h4">Contenu 2</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                            <ul>
-                                                <li>list item<ul>
-                                                        <li>list item niveau 2</li>
-                                                        <li>list item niveau 2</li>
-                                                    </ul>
-                                                </li>
-                                                <li>list item</li>
-                                                <li>list item</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="fr-mb-12v">
-                        <section class="fr-accordion">
-                            <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-192">Extrait de code</button>
-                            </h3>
-                            <div class="fr-collapse" id="snippet-192">
-                                <pre class=" language-html"><code>&lt;section class="fr-accordion"&gt;
-    &lt;h3 class="fr-accordion__title"&gt;
-        &lt;button class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-189"&gt;Intitulé accordéon&lt;/button&gt;
-    &lt;/h3&gt;
-    &lt;div class="fr-collapse" id="accordion-189"&gt;
-        &lt;div class="fr-tabs"&gt;
-            &lt;ul class="fr-tabs__list" role="tablist" aria-label="[A modifier | nom du système d'onglet]"&gt;
-                &lt;li role="presentation"&gt;
-                    &lt;button id="tabpanel-190" class="fr-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-190-panel"&gt;Label Tab 1&lt;/button&gt;
-                &lt;/li&gt;
-                &lt;li role="presentation"&gt;
-                    &lt;button id="tabpanel-191" class="fr-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-191-panel"&gt;Label Tab 2&lt;/button&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;div id="tabpanel-190-panel" class="fr-tabs__panel fr-tabs__panel--selected" role="tabpanel" aria-labelledby="tabpanel-190" tabindex="0"&gt;
-                &lt;!-- données de test --&gt;
-            &lt;/div&gt;
-            &lt;div id="tabpanel-191-panel" class="fr-tabs__panel" role="tabpanel" aria-labelledby="tabpanel-191" tabindex="0"&gt;
-                &lt;!-- données de test --&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
 </code></pre>
                             </div>
                         </section>
@@ -1683,7 +359,15 @@
             </div>
         </div>
     </div>
-    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false">
+    <div class="fr-container fr-mt-2v fr-mb-8w">
+        <h3>Mises en situation</h3>
+        <ul>
+            <li>
+                <a href="./imbrication">Imbrication d&#39;accordéons</a>
+            </li>
+        </ul>
+    </div>
+    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false" style="z-index: 1600">
         Label bouton
     </button>
     <dialog id="fr-theme-modal" class="fr-modal" role="dialog" aria-labelledby="fr-theme-modal-title">
@@ -1713,7 +397,7 @@
                                                     Thème clair
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/light.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/light.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/light.svg#artwork-major"></use>
@@ -1726,7 +410,7 @@
                                                     Thème sombre
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/dark.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/dark.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/dark.svg#artwork-major"></use>
@@ -1740,7 +424,7 @@
                                                     <span class="fr-hint-text">Utilise les paramètres système.</span>
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/system.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/system.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/system.svg#artwork-major"></use>

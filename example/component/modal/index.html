@@ -15,23 +15,23 @@
     <!-- Dans le fichier manifest.webmanifest aussi, modifier les chemins vers les images -->
     <link href="../../../dist/core/core.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/link/link.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/scheme/scheme.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/button/button.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/scheme/scheme.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/accordion/accordion.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/modal/modal.main.css" rel="stylesheet" file="main">
-    <link href="../../../dist/utility/utility.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/component/input/input.main.css" rel="stylesheet" file="main">
+    <link href="../../../dist/utility/utility.main.css" rel="stylesheet" file="main">
     <link href="../../../dist/core/core.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/link/link.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/form/form.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/button/button.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/accordion/accordion.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/form/form.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/modal/modal.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../../dist/utility/utility.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../../dist/component/input/input.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../../dist/utility/utility.legacy.css" rel="stylesheet" file="legacy">
     <style>
         code[class*="language-"],
         pre[class*="language-"] {
@@ -110,139 +110,13 @@
                 <div class="fr-col-md-8 fr-col-12">
                     <h4>Modale simple</h4>
                     <div class="fr-mb-6v">
-                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1011">
-                            Modal simple
-                        </button>
-                        <dialog id="modal-1011" class="fr-modal" role="dialog" aria-labelledby="modal-1011-title">
-                            <div class="fr-container fr-container--fluid fr-container-md">
-                                <div class="fr-grid-row fr-grid-row--center">
-                                    <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
-                                        <div class="fr-modal__body">
-                                            <div class="fr-modal__header">
-                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1011" title="Fermer">
-                                                    Fermer
-                                                </button>
-                                            </div>
-                                            <div class="fr-modal__content">
-                                                <h1 id="modal-1011-title" class="fr-modal__title">
-                                                    <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
-                                                    Titre de la modale
-                                                </h1>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing, incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </dialog>
-                    </div>
-                    <div class="fr-mb-12v">
-                        <section class="fr-accordion">
-                            <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1013">Extrait de code</button>
-                            </h3>
-                            <div class="fr-collapse" id="snippet-1013">
-                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1012"&gt;
-    Modal simple
-&lt;/button&gt;
-&lt;dialog id="modal-1012" class="fr-modal" role="dialog" aria-labelledby="modal-1012-title"&gt;
-    &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
-        &lt;div class="fr-grid-row fr-grid-row--center"&gt;
-            &lt;div class="fr-col-12 fr-col-md-8 fr-col-lg-6"&gt;
-                &lt;div class="fr-modal__body"&gt;
-                    &lt;div class="fr-modal__header"&gt;
-                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1012" title="Fermer"&gt;
-                            Fermer
-                        &lt;/button&gt;
-                    &lt;/div&gt;
-                    &lt;div class="fr-modal__content"&gt;
-                        &lt;h1 id="modal-1012-title" class="fr-modal__title"&gt;
-                            &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
-                            Titre de la modale
-                        &lt;/h1&gt;
-                        &lt;p&gt;Lorem [...] elit ut.&lt;/p&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/dialog&gt;
-</code></pre>
-                            </div>
-                        </section>
-                    </div>
-                    <h4>Modale SM</h4>
-                    <div class="fr-mb-6v">
-                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1014">
-                            Modal SM
-                        </button>
-                        <dialog id="modal-1014" class="fr-modal" role="dialog" aria-labelledby="modal-1014-title">
-                            <div class="fr-container fr-container--fluid fr-container-md">
-                                <div class="fr-grid-row fr-grid-row--center">
-                                    <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
-                                        <div class="fr-modal__body">
-                                            <div class="fr-modal__header">
-                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1014" title="Fermer">
-                                                    Fermer
-                                                </button>
-                                            </div>
-                                            <div class="fr-modal__content">
-                                                <h1 id="modal-1014-title" class="fr-modal__title">
-                                                    <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
-                                                    Titre de la modale
-                                                </h1>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing, incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </dialog>
-                    </div>
-                    <div class="fr-mb-12v">
-                        <section class="fr-accordion">
-                            <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1016">Extrait de code</button>
-                            </h3>
-                            <div class="fr-collapse" id="snippet-1016">
-                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1015"&gt;
-    Modal SM
-&lt;/button&gt;
-&lt;dialog id="modal-1015" class="fr-modal" role="dialog" aria-labelledby="modal-1015-title"&gt;
-    &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
-        &lt;div class="fr-grid-row fr-grid-row--center"&gt;
-            &lt;div class="fr-col-12 fr-col-md-6 fr-col-lg-4"&gt;
-                &lt;div class="fr-modal__body"&gt;
-                    &lt;div class="fr-modal__header"&gt;
-                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1015" title="Fermer"&gt;
-                            Fermer
-                        &lt;/button&gt;
-                    &lt;/div&gt;
-                    &lt;div class="fr-modal__content"&gt;
-                        &lt;h1 id="modal-1015-title" class="fr-modal__title"&gt;
-                            &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
-                            Titre de la modale
-                        &lt;/h1&gt;
-                        &lt;p&gt;Lorem [...] elit ut.&lt;/p&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/dialog&gt;
-</code></pre>
-                            </div>
-                        </section>
-                    </div>
-                    <h4>Modale LG</h4>
-                    <div class="fr-mb-6v">
                         <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1017">
-                            Modal LG
+                            Modal simple
                         </button>
                         <dialog id="modal-1017" class="fr-modal" role="dialog" aria-labelledby="modal-1017-title">
                             <div class="fr-container fr-container--fluid fr-container-md">
                                 <div class="fr-grid-row fr-grid-row--center">
-                                    <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
+                                    <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
                                         <div class="fr-modal__body">
                                             <div class="fr-modal__header">
                                                 <button class="fr-btn--close fr-btn" aria-controls="modal-1017" title="Fermer">
@@ -269,12 +143,12 @@
                             </h3>
                             <div class="fr-collapse" id="snippet-1019">
                                 <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1018"&gt;
-    Modal LG
+    Modal simple
 &lt;/button&gt;
 &lt;dialog id="modal-1018" class="fr-modal" role="dialog" aria-labelledby="modal-1018-title"&gt;
     &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
         &lt;div class="fr-grid-row fr-grid-row--center"&gt;
-            &lt;div class="fr-col-12 fr-col-md-10 fr-col-lg-8"&gt;
+            &lt;div class="fr-col-12 fr-col-md-8 fr-col-lg-6"&gt;
                 &lt;div class="fr-modal__body"&gt;
                     &lt;div class="fr-modal__header"&gt;
                         &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1018" title="Fermer"&gt;
@@ -297,15 +171,15 @@
                             </div>
                         </section>
                     </div>
-                    <h4>Modale formulaire</h4>
+                    <h4>Modale SM</h4>
                     <div class="fr-mb-6v">
                         <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1020">
-                            Modal formulaire
+                            Modal SM
                         </button>
                         <dialog id="modal-1020" class="fr-modal" role="dialog" aria-labelledby="modal-1020-title">
                             <div class="fr-container fr-container--fluid fr-container-md">
                                 <div class="fr-grid-row fr-grid-row--center">
-                                    <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
+                                    <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
                                         <div class="fr-modal__body">
                                             <div class="fr-modal__header">
                                                 <button class="fr-btn--close fr-btn" aria-controls="modal-1020" title="Fermer">
@@ -314,6 +188,132 @@
                                             </div>
                                             <div class="fr-modal__content">
                                                 <h1 id="modal-1020-title" class="fr-modal__title">
+                                                    <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
+                                                    Titre de la modale
+                                                </h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing, incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="fr-mb-12v">
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1022">Extrait de code</button>
+                            </h3>
+                            <div class="fr-collapse" id="snippet-1022">
+                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1021"&gt;
+    Modal SM
+&lt;/button&gt;
+&lt;dialog id="modal-1021" class="fr-modal" role="dialog" aria-labelledby="modal-1021-title"&gt;
+    &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
+        &lt;div class="fr-grid-row fr-grid-row--center"&gt;
+            &lt;div class="fr-col-12 fr-col-md-6 fr-col-lg-4"&gt;
+                &lt;div class="fr-modal__body"&gt;
+                    &lt;div class="fr-modal__header"&gt;
+                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1021" title="Fermer"&gt;
+                            Fermer
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class="fr-modal__content"&gt;
+                        &lt;h1 id="modal-1021-title" class="fr-modal__title"&gt;
+                            &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
+                            Titre de la modale
+                        &lt;/h1&gt;
+                        &lt;p&gt;Lorem [...] elit ut.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/dialog&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Modale LG</h4>
+                    <div class="fr-mb-6v">
+                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1023">
+                            Modal LG
+                        </button>
+                        <dialog id="modal-1023" class="fr-modal" role="dialog" aria-labelledby="modal-1023-title">
+                            <div class="fr-container fr-container--fluid fr-container-md">
+                                <div class="fr-grid-row fr-grid-row--center">
+                                    <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
+                                        <div class="fr-modal__body">
+                                            <div class="fr-modal__header">
+                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1023" title="Fermer">
+                                                    Fermer
+                                                </button>
+                                            </div>
+                                            <div class="fr-modal__content">
+                                                <h1 id="modal-1023-title" class="fr-modal__title">
+                                                    <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
+                                                    Titre de la modale
+                                                </h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing, incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="fr-mb-12v">
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1025">Extrait de code</button>
+                            </h3>
+                            <div class="fr-collapse" id="snippet-1025">
+                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1024"&gt;
+    Modal LG
+&lt;/button&gt;
+&lt;dialog id="modal-1024" class="fr-modal" role="dialog" aria-labelledby="modal-1024-title"&gt;
+    &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
+        &lt;div class="fr-grid-row fr-grid-row--center"&gt;
+            &lt;div class="fr-col-12 fr-col-md-10 fr-col-lg-8"&gt;
+                &lt;div class="fr-modal__body"&gt;
+                    &lt;div class="fr-modal__header"&gt;
+                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1024" title="Fermer"&gt;
+                            Fermer
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class="fr-modal__content"&gt;
+                        &lt;h1 id="modal-1024-title" class="fr-modal__title"&gt;
+                            &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
+                            Titre de la modale
+                        &lt;/h1&gt;
+                        &lt;p&gt;Lorem [...] elit ut.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/dialog&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Modale formulaire</h4>
+                    <div class="fr-mb-6v">
+                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1026">
+                            Modal formulaire
+                        </button>
+                        <dialog id="modal-1026" class="fr-modal" role="dialog" aria-labelledby="modal-1026-title">
+                            <div class="fr-container fr-container--fluid fr-container-md">
+                                <div class="fr-grid-row fr-grid-row--center">
+                                    <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
+                                        <div class="fr-modal__body">
+                                            <div class="fr-modal__header">
+                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1026" title="Fermer">
+                                                    Fermer
+                                                </button>
+                                            </div>
+                                            <div class="fr-modal__content">
+                                                <h1 id="modal-1026-title" class="fr-modal__title">
                                                     <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
                                                     Titre de la modale
                                                 </h1>
@@ -359,24 +359,24 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1022">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1028">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-1022">
-                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1021"&gt;
+                            <div class="fr-collapse" id="snippet-1028">
+                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1027"&gt;
     Modal formulaire
 &lt;/button&gt;
-&lt;dialog id="modal-1021" class="fr-modal" role="dialog" aria-labelledby="modal-1021-title"&gt;
+&lt;dialog id="modal-1027" class="fr-modal" role="dialog" aria-labelledby="modal-1027-title"&gt;
     &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
         &lt;div class="fr-grid-row fr-grid-row--center"&gt;
             &lt;div class="fr-col-12 fr-col-md-8 fr-col-lg-6"&gt;
                 &lt;div class="fr-modal__body"&gt;
                     &lt;div class="fr-modal__header"&gt;
-                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1021" title="Fermer"&gt;
+                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1027" title="Fermer"&gt;
                             Fermer
                         &lt;/button&gt;
                     &lt;/div&gt;
                     &lt;div class="fr-modal__content"&gt;
-                        &lt;h1 id="modal-1021-title" class="fr-modal__title"&gt;
+                        &lt;h1 id="modal-1027-title" class="fr-modal__title"&gt;
                             &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
                             Titre de la modale
                         &lt;/h1&gt;
@@ -424,21 +424,21 @@
                     </div>
                     <h4>Modale avec iframe</h4>
                     <div class="fr-mb-6v">
-                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1023">
+                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1029">
                             Modal iframe
                         </button>
-                        <dialog id="modal-1023" class="fr-modal" role="dialog" aria-labelledby="modal-1023-title">
+                        <dialog id="modal-1029" class="fr-modal" role="dialog" aria-labelledby="modal-1029-title">
                             <div class="fr-container fr-container--fluid fr-container-md">
                                 <div class="fr-grid-row fr-grid-row--center">
                                     <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
                                         <div class="fr-modal__body">
                                             <div class="fr-modal__header">
-                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1023" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1029" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
                                             <div class="fr-modal__content">
-                                                <h1 id="modal-1023-title" class="fr-modal__title">
+                                                <h1 id="modal-1029-title" class="fr-modal__title">
                                                     <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
                                                     Titre de la modale
                                                 </h1>
@@ -454,24 +454,24 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1025">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1031">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-1025">
-                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1024"&gt;
+                            <div class="fr-collapse" id="snippet-1031">
+                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1030"&gt;
     Modal iframe
 &lt;/button&gt;
-&lt;dialog id="modal-1024" class="fr-modal" role="dialog" aria-labelledby="modal-1024-title"&gt;
+&lt;dialog id="modal-1030" class="fr-modal" role="dialog" aria-labelledby="modal-1030-title"&gt;
     &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
         &lt;div class="fr-grid-row fr-grid-row--center"&gt;
             &lt;div class="fr-col-12 fr-col-md-8 fr-col-lg-6"&gt;
                 &lt;div class="fr-modal__body"&gt;
                     &lt;div class="fr-modal__header"&gt;
-                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1024" title="Fermer"&gt;
+                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1030" title="Fermer"&gt;
                             Fermer
                         &lt;/button&gt;
                     &lt;/div&gt;
                     &lt;div class="fr-modal__content"&gt;
-                        &lt;h1 id="modal-1024-title" class="fr-modal__title"&gt;
+                        &lt;h1 id="modal-1030-title" class="fr-modal__title"&gt;
                             &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
                             Titre de la modale
                         &lt;/h1&gt;
@@ -489,21 +489,21 @@
                     </div>
                     <h4>Modal avec zone d&#39;action</h4>
                     <div class="fr-mb-6v">
-                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1026">
-                            Modale avec zone d&#39;action
+                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1032">
+                            Modale avec zone d'action
                         </button>
-                        <dialog id="modal-1026" class="fr-modal" role="dialog" aria-labelledby="modal-1026-title">
+                        <dialog id="modal-1032" class="fr-modal" role="dialog" aria-labelledby="modal-1032-title">
                             <div class="fr-container fr-container--fluid fr-container-md">
                                 <div class="fr-grid-row fr-grid-row--center">
                                     <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
                                         <div class="fr-modal__body">
                                             <div class="fr-modal__header">
-                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1026" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1032" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
                                             <div class="fr-modal__content">
-                                                <h1 id="modal-1026-title" class="fr-modal__title">
+                                                <h1 id="modal-1032-title" class="fr-modal__title">
                                                     <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
                                                     Titre de la modale
                                                 </h1>
@@ -532,24 +532,24 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1028">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1034">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-1028">
-                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1027"&gt;
-    Modale avec zone d&amp;#39;action
+                            <div class="fr-collapse" id="snippet-1034">
+                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1033"&gt;
+    Modale avec zone d'action
 &lt;/button&gt;
-&lt;dialog id="modal-1027" class="fr-modal" role="dialog" aria-labelledby="modal-1027-title"&gt;
+&lt;dialog id="modal-1033" class="fr-modal" role="dialog" aria-labelledby="modal-1033-title"&gt;
     &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
         &lt;div class="fr-grid-row fr-grid-row--center"&gt;
             &lt;div class="fr-col-12 fr-col-md-8 fr-col-lg-6"&gt;
                 &lt;div class="fr-modal__body"&gt;
                     &lt;div class="fr-modal__header"&gt;
-                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1027" title="Fermer"&gt;
+                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1033" title="Fermer"&gt;
                             Fermer
                         &lt;/button&gt;
                     &lt;/div&gt;
                     &lt;div class="fr-modal__content"&gt;
-                        &lt;h1 id="modal-1027-title" class="fr-modal__title"&gt;
+                        &lt;h1 id="modal-1033-title" class="fr-modal__title"&gt;
                             &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
                             Titre de la modale
                         &lt;/h1&gt;
@@ -580,21 +580,21 @@
                     </div>
                     <h4>Modal avec zone d&#39;action ancré en haut</h4>
                     <div class="fr-mb-6v">
-                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1029">
+                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1035">
                             Modale ancrée en haut
                         </button>
-                        <dialog id="modal-1029" class="fr-modal fr-modal--top" role="dialog" aria-labelledby="modal-1029-title">
+                        <dialog id="modal-1035" class="fr-modal fr-modal--top" role="dialog" aria-labelledby="modal-1035-title">
                             <div class="fr-container fr-container--fluid fr-container-md">
                                 <div class="fr-grid-row fr-grid-row--center">
                                     <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
                                         <div class="fr-modal__body">
                                             <div class="fr-modal__header">
-                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1029" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1035" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
                                             <div class="fr-modal__content">
-                                                <h1 id="modal-1029-title" class="fr-modal__title">
+                                                <h1 id="modal-1035-title" class="fr-modal__title">
                                                     <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
                                                     Titre de la modale
                                                 </h1>
@@ -623,24 +623,24 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1031">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1037">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-1031">
-                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1030"&gt;
+                            <div class="fr-collapse" id="snippet-1037">
+                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1036"&gt;
     Modale ancrée en haut
 &lt;/button&gt;
-&lt;dialog id="modal-1030" class="fr-modal fr-modal--top" role="dialog" aria-labelledby="modal-1030-title"&gt;
+&lt;dialog id="modal-1036" class="fr-modal fr-modal--top" role="dialog" aria-labelledby="modal-1036-title"&gt;
     &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
         &lt;div class="fr-grid-row fr-grid-row--center"&gt;
             &lt;div class="fr-col-12 fr-col-md-8 fr-col-lg-6"&gt;
                 &lt;div class="fr-modal__body"&gt;
                     &lt;div class="fr-modal__header"&gt;
-                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1030" title="Fermer"&gt;
+                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1036" title="Fermer"&gt;
                             Fermer
                         &lt;/button&gt;
                     &lt;/div&gt;
                     &lt;div class="fr-modal__content"&gt;
-                        &lt;h1 id="modal-1030-title" class="fr-modal__title"&gt;
+                        &lt;h1 id="modal-1036-title" class="fr-modal__title"&gt;
                             &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
                             Titre de la modale
                         &lt;/h1&gt;
@@ -671,21 +671,21 @@
                     </div>
                     <h4>Modale simple non refermable au click sur le fond</h4>
                     <div class="fr-mb-6v">
-                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1032">
+                        <button class="fr-btn" data-fr-opened="false" aria-controls="modal-1038">
                             Modal simple
                         </button>
-                        <dialog id="modal-1032" class="fr-modal" role="dialog" aria-labelledby="modal-1032-title" data-fr-concealing-backdrop="false">
+                        <dialog id="modal-1038" class="fr-modal" role="dialog" aria-labelledby="modal-1038-title" data-fr-concealing-backdrop="false">
                             <div class="fr-container fr-container--fluid fr-container-md">
                                 <div class="fr-grid-row fr-grid-row--center">
                                     <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
                                         <div class="fr-modal__body">
                                             <div class="fr-modal__header">
-                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1032" title="Fermer">
+                                                <button class="fr-btn--close fr-btn" aria-controls="modal-1038" title="Fermer">
                                                     Fermer
                                                 </button>
                                             </div>
                                             <div class="fr-modal__content">
-                                                <h1 id="modal-1032-title" class="fr-modal__title">
+                                                <h1 id="modal-1038-title" class="fr-modal__title">
                                                     <span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"></span>
                                                     Titre de la modale
                                                 </h1>
@@ -700,24 +700,24 @@
                     <div class="fr-mb-12v">
                         <section class="fr-accordion">
                             <h3 class="fr-accordion__title">
-                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1034">Extrait de code</button>
+                                <button class="fr-accordion__btn" aria-expanded="false" aria-controls="snippet-1040">Extrait de code</button>
                             </h3>
-                            <div class="fr-collapse" id="snippet-1034">
-                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1033"&gt;
+                            <div class="fr-collapse" id="snippet-1040">
+                                <pre class=" language-html"><code>&lt;button class="fr-btn" data-fr-opened="false" aria-controls="modal-1039"&gt;
     Modal simple
 &lt;/button&gt;
-&lt;dialog id="modal-1033" class="fr-modal" role="dialog" aria-labelledby="modal-1033-title" data-fr-concealing-backdrop="false"&gt;
+&lt;dialog id="modal-1039" class="fr-modal" role="dialog" aria-labelledby="modal-1039-title" data-fr-concealing-backdrop="false"&gt;
     &lt;div class="fr-container fr-container--fluid fr-container-md"&gt;
         &lt;div class="fr-grid-row fr-grid-row--center"&gt;
             &lt;div class="fr-col-12 fr-col-md-8 fr-col-lg-6"&gt;
                 &lt;div class="fr-modal__body"&gt;
                     &lt;div class="fr-modal__header"&gt;
-                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1033" title="Fermer"&gt;
+                        &lt;button class="fr-btn--close fr-btn" aria-controls="modal-1039" title="Fermer"&gt;
                             Fermer
                         &lt;/button&gt;
                     &lt;/div&gt;
                     &lt;div class="fr-modal__content"&gt;
-                        &lt;h1 id="modal-1033-title" class="fr-modal__title"&gt;
+                        &lt;h1 id="modal-1039-title" class="fr-modal__title"&gt;
                             &lt;span class="fr-icon-arrow-right-line fr-icon--lg" aria-hidden="true"&gt;&lt;/span&gt;
                             Titre de la modale
                         &lt;/h1&gt;
@@ -736,7 +736,7 @@
             </div>
         </div>
     </div>
-    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false">
+    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false" style="z-index: 1600">
         Label bouton
     </button>
     <dialog id="fr-theme-modal" class="fr-modal" role="dialog" aria-labelledby="fr-theme-modal-title">
@@ -766,7 +766,7 @@
                                                     Thème clair
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/light.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/light.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/light.svg#artwork-major"></use>
@@ -779,7 +779,7 @@
                                                     Thème sombre
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/dark.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/dark.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/dark.svg#artwork-major"></use>
@@ -793,7 +793,7 @@
                                                     <span class="fr-hint-text">Utilise les paramètres système.</span>
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../../dist/artwork/system.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../../dist/artwork/system.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../../dist/artwork/system.svg#artwork-major"></use>

@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -18,12 +18,7 @@
   --text-spacing: 0;
   --title-spacing: 0;
   width: 100%;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 16px -16px rgba(0, 0, 0, 0.32);
   position: relative;
-  background-color: var(--background-elevated-grey);
-
-  --hover: var(--background-elevated-grey-hover);
-  --active: var(--background-elevated-grey-active);
 }
 
 .fr-header__body-row {
@@ -43,6 +38,13 @@
   width: 100%;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+  z-index: calc(var(--ground) + 500);
+  filter: drop-shadow(var(--raised-shadow));
+  background-color: var(--background-raised-grey);
+
+  --idle: transparent;
+  --hover: var(--background-raised-grey-hover);
+  --active: var(--background-raised-grey-active);
 }
 
 .fr-header__brand-top {
@@ -121,10 +123,11 @@
 .fr-header .fr-modal {
   overflow: auto;
   justify-content: initial;
-  background-color: var(--background-elevated-grey);
+  background-color: var(--background-lifted-grey);
 
-  --hover: var(--background-elevated-grey-hover);
-  --active: var(--background-elevated-grey-active);
+  --idle: transparent;
+  --hover: var(--background-lifted-grey-hover);
+  --active: var(--background-lifted-grey-active);
 }
 
 .fr-header .fr-modal:not([role=dialog]) {
@@ -159,7 +162,7 @@
   order: 3;
   flex: 0 0 auto;
   align-self: flex-start;
-  z-index: 2000;
+  z-index: calc(var(--ground) + 1000);
 }
 
 .fr-header__navbar .fr-btn {
@@ -279,6 +282,24 @@
   display: none;
 }
 
+.fr-header .fr-header__menu-links::after {
+  content: "";
+  display: block;
+  margin: 0.75rem -1rem;
+  width: calc(100% + 2rem);
+  height: 1px;
+}
+
+.fr-header .fr-header__menu-links .fr-translate {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.fr-header .fr-header__menu-links .fr-translate__btn {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .fr-header .fr-header__menu-links .fr-btns-group:not(.fr-btns-group--sm):not(.fr-btns-group--lg):not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) {
   display: flex;
   flex-direction: column;
@@ -288,7 +309,10 @@
   width: calc(100% - 1rem);
   min-height: 3rem;
   padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .fr-header .fr-links-group {
@@ -302,8 +326,6 @@
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .fr-header .fr-links-group > li {
@@ -312,9 +334,9 @@
 }
 
 .fr-header .fr-links-group .fr-btn {
-  width: 100%;
-  margin-right: 0;
-  margin-left: 0;
+  width: calc(100% - 1rem);
+  margin: 0 0.5rem 1rem;
+  justify-content: center;
 }
 
 .fr-header .fr-links-group .fr-link {
@@ -369,6 +391,10 @@
   margin-bottom: 1.5rem;
 }
 
+.fr-header__menu-links::after {
+  box-shadow: inset 0 1px 0 0 var(--border-default-grey);
+}
+
 .fr-header__menu-links .fr-btn {
   background-color: transparent;
 
@@ -376,6 +402,7 @@
   --active: inherit;
   color: var(--text-action-high-blue-france);
   box-shadow: inset 0 -1px 0 0 var(--border-default-grey);
+  box-shadow: none;
 }
 
 .fr-header__menu-links .fr-btn:disabled,
@@ -385,6 +412,10 @@
 
   --hover: inherit;
   --active: inherit;
+}
+
+.fr-header__menu-links ul > li:last-child .fr-btn {
+  box-shadow: none;
 }
 
 .fr-header__tools-links .fr-btn {
@@ -482,6 +513,9 @@
     width: auto;
     padding-left: 0;
     padding-right: 0;
+    z-index: auto;
+    filter: none;
+    background: transparent;
   }
 
   .fr-header__brand-top {
@@ -552,17 +586,23 @@
   }
 
   .fr-header__tools-links {
-    display: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: -1rem;
   }
 
   .fr-header__tools-links .fr-btns-group {
     justify-content: flex-end;
-    margin: 0 -0.25rem -1rem;
+    margin: 0 -0.25rem;
   }
 
   .fr-header__tools-links .fr-btns-group .fr-btn {
     width: auto;
     max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
@@ -571,10 +611,18 @@
     display: inline-flex;
     max-width: 100%;
     width: auto;
+    align-items: flex-start;
   }
 
-  .fr-header__tools-links .fr-btns-group > li::before {
-    content: none;
+  .fr-header .fr-header__menu-links .fr-translate {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -1rem;
+  }
+
+  .fr-header .fr-header__menu-links .fr-btns-group:not(.fr-btns-group--sm):not(.fr-btns-group--lg):not([class^=fr-btns-group--icon-]):not([class*=" fr-btns-group--icon-"]) .fr-btn {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
   }
 
   .fr-header .fr-header__menu-links {
@@ -589,11 +637,6 @@
     max-width: calc(100% + 1rem);
   }
 
-  .fr-header .fr-nav .fr-menu::after,
-  .fr-header .fr-nav .fr-mega-menu {
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 16px -16px rgba(0, 0, 0, 0.32);
-  }
-
   .fr-header .fr-links-group {
     justify-content: flex-end;
   }
@@ -601,6 +644,8 @@
   .fr-header .fr-links-group .fr-btn {
     width: auto;
     max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .fr-header .fr-links-group > li {
@@ -609,28 +654,22 @@
     width: auto;
   }
 
-  .fr-header .fr-links-group > li::before {
-    content: none;
-  }
-
   .fr-header__tools-links .fr-links-group {
     justify-content: flex-end;
-    margin: 0 -0.25rem -1rem;
+    margin: 0 -0.25rem;
   }
 
   .fr-header__tools-links .fr-links-group .fr-btn {
     width: auto;
     max-width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .fr-header__tools-links .fr-links-group > li {
     display: inline-flex;
     max-width: 100%;
     width: auto;
-  }
-
-  .fr-header__tools-links .fr-links-group > li::before {
-    content: none;
   }
 
   .fr-header__tools-links .fr-links-group .fr-link {
@@ -640,6 +679,16 @@
 
   .fr-header .fr-modal > * > .fr-link--close {
     display: none;
+  }
+
+  .fr-header {
+    z-index: calc(var(--ground) + 500);
+    filter: drop-shadow(var(--raised-shadow));
+    background-color: var(--background-raised-grey);
+
+    --idle: transparent;
+    --hover: var(--background-raised-grey-hover);
+    --active: var(--background-raised-grey-active);
   }
 
   .fr-header .fr-header__menu {

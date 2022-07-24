@@ -1,10 +1,10 @@
-/*! DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
+/*! DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
 
 const config = {
   prefix: 'fr',
   namespace: 'dsfr',
   organisation: '@gouvfr',
-  version: '1.6.0'
+  version: '1.7.0'
 };
 
 const api = window[config.namespace];
@@ -606,7 +606,7 @@ class NavigationItem extends api.core.Instance {
   calculate () {
     const collapse = this.element.getDescendantInstances(api.core.Collapse.instanceClassName, null, true)[0];
     if (collapse && this.isBreakpoint(api.core.Breakpoints.LG) && collapse.element.node.matches(NavigationSelector.MENU)) {
-      const right = this.element.node.parentElement.getBoundingClientRect().right;
+      const right = this.element.node.parentElement.getBoundingClientRect().right; // todo: ne fonctionne que si la nav fait 100% du container
       const width = collapse.element.node.getBoundingClientRect().width;
       const left = this.element.node.getBoundingClientRect().left;
       this.isRightAligned = left + width > right;
@@ -1303,23 +1303,27 @@ class HeaderLinks extends api.core.Instance {
     const header = this.queryParentSelector(HeaderSelector.HEADER);
     this.toolsLinks = header.querySelector(HeaderSelector.TOOLS_LINKS);
     this.menuLinks = header.querySelector(HeaderSelector.MENU_LINKS);
+    const copySuffix = '_copy';
 
     const toolsHtml = this.toolsLinks.innerHTML.replace(/  +/g, ' ');
     const menuHtml = this.menuLinks.innerHTML.replace(/  +/g, ' ');
+    // Pour éviter de dupliquer des id, on ajoute un suffixe aux id et aria-controls duppliqués.
+    let toolsHtmlDuplicateId = toolsHtml.replace(/ id="(.*?)"/gm, ' id="$1' + copySuffix + '"');
+    toolsHtmlDuplicateId = toolsHtmlDuplicateId.replace(/ aria-controls="(.*?)"/gm, ' aria-controls="$1' + copySuffix + '"');
 
-    if (toolsHtml === menuHtml) return;
+    if (toolsHtmlDuplicateId === menuHtml) return;
 
     switch (api.mode) {
       case api.Modes.ANGULAR:
       case api.Modes.REACT:
       case api.Modes.VUE:
         api.inspector.warn(`header__tools-links content is different from header__menu-links content.
-As you're using a dynamic framework, you should handle duplication of this content yourself, please refer to documentation: 
+As you're using a dynamic framework, you should handle duplication of this content yourself, please refer to documentation:
 ${api.header.doc}`);
         break;
 
       default:
-        this.menuLinks.innerHTML = this.toolsLinks.innerHTML;
+        this.menuLinks.innerHTML = toolsHtmlDuplicateId;
     }
   }
 }

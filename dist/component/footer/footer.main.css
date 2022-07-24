@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 @charset "UTF-8";
 
@@ -122,6 +122,11 @@
   background-position: -2.625rem 100%;
 }
 
+.fr-footer__brand-link {
+  display: flex;
+  flex-direction: row;
+}
+
 .fr-footer__brand .fr-logo + .fr-footer__brand-link {
   margin-left: 1.5rem;
 }
@@ -193,6 +198,7 @@
   padding: 2rem 0 1rem;
   background-color: var(--background-alt-grey);
 
+  --idle: transparent;
   --hover: var(--background-alt-grey-hover);
   --active: var(--background-alt-grey-active);
 }
@@ -334,7 +340,6 @@
   align-items: center;
   justify-content: center;
   box-shadow: none;
-  background: #fff;
 }
 
 .fr-footer__partners .fr-footer__logo {
@@ -395,6 +400,12 @@
 .fr-footer__content-link,
 .fr-footer__top-cat {
   color: var(--text-title-grey);
+}
+
+.fr-footer__partners .fr-footer__partners-link,
+.fr-footer__partners .fr-footer__partners-link:hover,
+.fr-footer__partners .fr-footer__partners-link:active {
+  background: #fff;
 }
 @media (min-width: 36em) {
   /*! media sm */
@@ -481,7 +492,12 @@
 
   .fr-footer__brand {
     flex-basis: auto;
-    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+
+  .fr-footer__brand.fr-enlarge-link {
+    margin: -1rem 0 -1rem -1rem;
+    padding: 1rem;
   }
 
   .fr-footer__content {

@@ -1,4 +1,4 @@
-/*! DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
+/*! DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions) */
 
 class State {
   constructor () {
@@ -59,7 +59,7 @@ const config = {
   prefix: 'fr',
   namespace: 'dsfr',
   organisation: '@gouvfr',
-  version: '1.6.0'
+  version: '1.7.0'
 };
 
 class LogLevel {
@@ -1935,7 +1935,8 @@ class CollapseButton extends DisclosureButton {
 }
 
 const CollapseSelector = {
-  COLLAPSE: ns.selector('collapse')
+  COLLAPSE: ns.selector('collapse'),
+  COLLAPSING: ns.selector('collapsing')
 };
 
 /**
@@ -1958,6 +1959,7 @@ class Collapse extends Disclosure {
   }
 
   transitionend (e) {
+    this.removeClass(CollapseSelector.COLLAPSING);
     if (!this.disclosed) {
       if (this.isLegacy) this.style.maxHeight = '';
       else this.style.removeProperty('--collapse-max-height');
@@ -1973,6 +1975,7 @@ class Collapse extends Disclosure {
     if (this.disclosed) return;
     this.unbound();
     this.request(() => {
+      this.addClass(CollapseSelector.COLLAPSING);
       this.adjust();
       this.request(() => {
         super.disclose(withhold);
@@ -1983,6 +1986,7 @@ class Collapse extends Disclosure {
   conceal (withhold, preventFocus) {
     if (!this.disclosed) return;
     this.request(() => {
+      this.addClass(CollapseSelector.COLLAPSING);
       this.adjust();
       this.request(() => {
         super.conceal(withhold, preventFocus);

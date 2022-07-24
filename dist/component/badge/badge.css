@@ -1,5 +1,5 @@
 /*!
- * DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
+ * DSFR v1.7.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
 /* ------------------------------------ *\
   Badge
@@ -29,6 +29,7 @@
   color: var(--text-default-grey);
   background-color: var(--background-contrast-grey);
 
+  --idle: transparent;
   --hover: var(--background-contrast-grey-hover);
   --active: var(--background-contrast-grey-active);
 }
@@ -206,6 +207,7 @@
   color: var(--text-default-info);
   background-color: var(--background-contrast-info);
 
+  --idle: transparent;
   --hover: var(--background-contrast-info-hover);
   --active: var(--background-contrast-info-active);
 }
@@ -214,6 +216,7 @@
   color: var(--text-default-error);
   background-color: var(--background-contrast-error);
 
+  --idle: transparent;
   --hover: var(--background-contrast-error-hover);
   --active: var(--background-contrast-error-active);
 }
@@ -222,6 +225,7 @@
   color: var(--text-default-success);
   background-color: var(--background-contrast-success);
 
+  --idle: transparent;
   --hover: var(--background-contrast-success-hover);
   --active: var(--background-contrast-success-active);
 }
@@ -230,6 +234,7 @@
   color: var(--text-default-warning);
   background-color: var(--background-contrast-warning);
 
+  --idle: transparent;
   --hover: var(--background-contrast-warning-hover);
   --active: var(--background-contrast-warning-active);
 }
@@ -238,6 +243,7 @@
   color: var(--text-action-high-yellow-moutarde);
   background-color: var(--background-contrast-yellow-moutarde);
 
+  --idle: transparent;
   --hover: var(--background-contrast-yellow-moutarde-hover);
   --active: var(--background-contrast-yellow-moutarde-active);
 }
@@ -246,6 +252,7 @@
   color: var(--text-label-green-tilleul-verveine);
   background-color: var(--background-contrast-green-tilleul-verveine);
 
+  --idle: transparent;
   --hover: var(--background-contrast-green-tilleul-verveine-hover);
   --active: var(--background-contrast-green-tilleul-verveine-active);
 }
@@ -254,6 +261,7 @@
   color: var(--text-label-green-bourgeon);
   background-color: var(--background-contrast-green-bourgeon);
 
+  --idle: transparent;
   --hover: var(--background-contrast-green-bourgeon-hover);
   --active: var(--background-contrast-green-bourgeon-active);
 }
@@ -262,6 +270,7 @@
   color: var(--text-label-green-emeraude);
   background-color: var(--background-contrast-green-emeraude);
 
+  --idle: transparent;
   --hover: var(--background-contrast-green-emeraude-hover);
   --active: var(--background-contrast-green-emeraude-active);
 }
@@ -270,6 +279,7 @@
   color: var(--text-label-green-menthe);
   background-color: var(--background-contrast-green-menthe);
 
+  --idle: transparent;
   --hover: var(--background-contrast-green-menthe-hover);
   --active: var(--background-contrast-green-menthe-active);
 }
@@ -278,6 +288,7 @@
   color: var(--text-label-green-archipel);
   background-color: var(--background-contrast-green-archipel);
 
+  --idle: transparent;
   --hover: var(--background-contrast-green-archipel-hover);
   --active: var(--background-contrast-green-archipel-active);
 }
@@ -286,6 +297,7 @@
   color: var(--text-label-blue-ecume);
   background-color: var(--background-contrast-blue-ecume);
 
+  --idle: transparent;
   --hover: var(--background-contrast-blue-ecume-hover);
   --active: var(--background-contrast-blue-ecume-active);
 }
@@ -294,6 +306,7 @@
   color: var(--text-label-blue-cumulus);
   background-color: var(--background-contrast-blue-cumulus);
 
+  --idle: transparent;
   --hover: var(--background-contrast-blue-cumulus-hover);
   --active: var(--background-contrast-blue-cumulus-active);
 }
@@ -302,6 +315,7 @@
   color: var(--text-label-purple-glycine);
   background-color: var(--background-contrast-purple-glycine);
 
+  --idle: transparent;
   --hover: var(--background-contrast-purple-glycine-hover);
   --active: var(--background-contrast-purple-glycine-active);
 }
@@ -310,6 +324,7 @@
   color: var(--text-label-pink-macaron);
   background-color: var(--background-contrast-pink-macaron);
 
+  --idle: transparent;
   --hover: var(--background-contrast-pink-macaron-hover);
   --active: var(--background-contrast-pink-macaron-active);
 }
@@ -318,6 +333,7 @@
   color: var(--text-label-pink-tuile);
   background-color: var(--background-contrast-pink-tuile);
 
+  --idle: transparent;
   --hover: var(--background-contrast-pink-tuile-hover);
   --active: var(--background-contrast-pink-tuile-active);
 }
@@ -326,6 +342,7 @@
   color: var(--text-label-yellow-tournesol);
   background-color: var(--background-contrast-yellow-tournesol);
 
+  --idle: transparent;
   --hover: var(--background-contrast-yellow-tournesol-hover);
   --active: var(--background-contrast-yellow-tournesol-active);
 }
@@ -334,6 +351,7 @@
   color: var(--text-label-yellow-moutarde);
   background-color: var(--background-contrast-yellow-moutarde);
 
+  --idle: transparent;
   --hover: var(--background-contrast-yellow-moutarde-hover);
   --active: var(--background-contrast-yellow-moutarde-active);
 }
@@ -342,6 +360,7 @@
   color: var(--text-label-orange-terre-battue);
   background-color: var(--background-contrast-orange-terre-battue);
 
+  --idle: transparent;
   --hover: var(--background-contrast-orange-terre-battue-hover);
   --active: var(--background-contrast-orange-terre-battue-active);
 }
@@ -350,6 +369,7 @@
   color: var(--text-label-brown-cafe-creme);
   background-color: var(--background-contrast-brown-cafe-creme);
 
+  --idle: transparent;
   --hover: var(--background-contrast-brown-cafe-creme-hover);
   --active: var(--background-contrast-brown-cafe-creme-active);
 }
@@ -358,6 +378,7 @@
   color: var(--text-label-brown-caramel);
   background-color: var(--background-contrast-brown-caramel);
 
+  --idle: transparent;
   --hover: var(--background-contrast-brown-caramel-hover);
   --active: var(--background-contrast-brown-caramel-active);
 }
@@ -366,6 +387,7 @@
   color: var(--text-label-brown-opera);
   background-color: var(--background-contrast-brown-opera);
 
+  --idle: transparent;
   --hover: var(--background-contrast-brown-opera-hover);
   --active: var(--background-contrast-brown-opera-active);
 }
@@ -374,6 +396,7 @@
   color: var(--text-label-beige-gris-galet);
   background-color: var(--background-contrast-beige-gris-galet);
 
+  --idle: transparent;
   --hover: var(--background-contrast-beige-gris-galet-hover);
   --active: var(--background-contrast-beige-gris-galet-active);
 }
@@ -399,6 +422,26 @@
 .fr-badge-group .fr-badge {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+}
+@media (min-width: 36em) {
+  /*! media sm */
+
+  /*! media sm */
+}
+@media (min-width: 48em) {
+  /*! media md */
+
+  /*! media md */
+}
+@media (min-width: 62em) {
+  /*! media lg */
+
+  /*! media lg */
+}
+@media (min-width: 78em) {
+  /*! media xl */
+
+  /*! media xl */
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .fr-badge::before,

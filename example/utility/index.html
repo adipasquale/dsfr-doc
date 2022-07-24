@@ -16,20 +16,20 @@
     <link href="../../dist/core/core.main.css" rel="stylesheet" file="main">
     <link href="../../dist/scheme/scheme.css" rel="stylesheet" file="main">
     <link href="../../dist/component/link/link.main.css" rel="stylesheet" file="main">
-    <link href="../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../dist/component/accordion/accordion.main.css" rel="stylesheet" file="main">
-    <link href="../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
+    <link href="../../dist/component/form/form.main.css" rel="stylesheet" file="main">
     <link href="../../dist/component/button/button.main.css" rel="stylesheet" file="main">
-    <link href="../../dist/utility/utility.main.css" rel="stylesheet" file="main">
+    <link href="../../dist/component/radio/radio.main.css" rel="stylesheet" file="main">
     <link href="../../dist/component/modal/modal.main.css" rel="stylesheet" file="main">
+    <link href="../../dist/utility/utility.main.css" rel="stylesheet" file="main">
     <link href="../../dist/core/core.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../dist/component/link/link.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../dist/component/form/form.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../dist/component/accordion/accordion.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../dist/component/form/form.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../dist/component/button/button.legacy.css" rel="stylesheet" file="legacy">
-    <link href="../../dist/utility/utility.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../dist/component/radio/radio.legacy.css" rel="stylesheet" file="legacy">
     <link href="../../dist/component/modal/modal.legacy.css" rel="stylesheet" file="legacy">
+    <link href="../../dist/utility/utility.legacy.css" rel="stylesheet" file="legacy">
     <style>
         code[class*="language-"],
         pre[class*="language-"] {
@@ -116,11 +116,14 @@
     <div class="fr-container">
         <ul class="fr-col-12">
             <li class="fr-mb-1w">
+                <a href='./colors/'>Utilitaires de couleur (colors)</a>
+            </li>
+            <li class="fr-mb-1w">
                 <a href='./icons/'>Utilitaires d&#39;icônes (icons)</a>
             </li>
         </ul>
     </div>
-    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false">
+    <button class="fr-display-button fr-background-default--grey fr-btn fr-btn--lg fr-icon-theme-fill fr-btn--secondary" aria-controls="fr-theme-modal" data-fr-opened="false" style="z-index: 1600">
         Label bouton
     </button>
     <dialog id="fr-theme-modal" class="fr-modal" role="dialog" aria-labelledby="fr-theme-modal-title">
@@ -150,7 +153,7 @@
                                                     Thème clair
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../dist/artwork/light.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../dist/artwork/light.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../dist/artwork/light.svg#artwork-major"></use>
@@ -163,7 +166,7 @@
                                                     Thème sombre
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../dist/artwork/dark.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../dist/artwork/dark.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../dist/artwork/dark.svg#artwork-major"></use>
@@ -177,7 +180,7 @@
                                                     <span class="fr-hint-text">Utilise les paramètres système.</span>
                                                 </label>
                                                 <div class="fr-radio-rich__img">
-                                                    <svg class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="fr-artwork" width="80px" height="80px" viewBox="0 0 80 80">
                                                         <use class="fr-artwork-decorative" xlink:href="../../dist/artwork/system.svg#artwork-decorative"></use>
                                                         <use class="fr-artwork-minor" xlink:href="../../dist/artwork/system.svg#artwork-minor"></use>
                                                         <use class="fr-artwork-major" xlink:href="../../dist/artwork/system.svg#artwork-major"></use>
